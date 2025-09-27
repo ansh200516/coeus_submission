@@ -1,0 +1,26 @@
+{
+  "name": "resume-parser",
+  "version": "1.0.0",
+  "description": "Resume parser using open-resume library",
+  "main": "parse_resume.js",
+  "scripts": {
+    "build": "tsc",
+    "parse": "node dist/parse_resume.js",
+    "dev": "ts-node parse_resume.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@types/node": "^20.2.5",
+    "pdfjs-dist": "^3.7.107",
+    "typescript": "^5.0.4",
+    "ts-node": "^10.9.0"
+  },
+  "devDependencies": {
+    "@types/pdfjs-dist": "^2.10.378"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

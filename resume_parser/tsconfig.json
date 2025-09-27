@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM"],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "lib/*": ["./open-resume/src/app/lib/*"]
+    }
+  },
+  "include": [
+    "*.ts",
+    "open-resume/src/app/lib/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "open-resume/src/app/lib/**/*.test.ts"
+  ]
+}

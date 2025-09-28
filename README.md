@@ -1,5 +1,9 @@
 # 🎯 Eightfold Finals - AI-Powered Interview Platform
 
+Interview with akira(HR) : /interview
+Technical Interview : /coding-engine
+Recuruitar's Landing page: /
+
 ## 📋 Project Overview
 
 **Eightfold Finals** is a comprehensive AI-powered interview platform designed to automate and enhance the technical interview process. The system combines multiple sophisticated components including lie detection, code interview monitoring, resume parsing, LinkedIn data scraping, and real-time audio/video processing to create a complete interview automation solution.

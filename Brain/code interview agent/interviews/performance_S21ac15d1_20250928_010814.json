@@ -1,0 +1,70 @@
+{
+    "session_id": "S21ac15d1",
+    "candidate": {
+        "name": "harsh",
+        "user_id": "Se9436b8c"
+    },
+    "problem": {
+        "id": "9",
+        "title": "Reverse Words in a String",
+        "difficulty": "medium",
+        "language": "python"
+    },
+    "time": {
+        "start": "2025-09-28T01:06:02.346270",
+        "end": "2025-09-27T19:38:14.695366+00:00",
+        "time_allowed_min": 20,
+        "time_used_min": 0
+    },
+    "scores": {
+        "final": 35,
+        "components": {
+            "correctness": 0,
+            "optimality": 15,
+            "code_quality": 0,
+            "understanding": 10,
+            "communication": 10,
+            "penalties": 0
+        }
+    },
+    "tests": {
+        "public": [],
+        "hidden": {
+            "passed": 0,
+            "total": 0
+        }
+    },
+    "hints": [
+        {
+            "level": 1,
+            "text": "Consider updating counts as you move left pointer",
+            "timestamp": "2025-09-28T01:08:14.695402"
+        }
+    ],
+    "timeline": [
+        {
+            "timestamp": "2025-09-28T01:08:14.694190",
+            "event": "hint",
+            "text": null,
+            "level": 1
+        }
+    ],
+    "artifacts": {
+        "final_code_path": "/files/S21ac15d1/S21ac15d1_final.py",
+        "transcript_path": "/files/S21ac15d1/S21ac15d1_transcript.txt"
+    },
+    "feedback": {
+        "strengths": [
+            "Good communication throughout",
+            "Demonstrated solid understanding"
+        ],
+        "weaknesses": [
+            "Accuracy in implementation needs improvement",
+            "Code organization and clarity could be enhanced"
+        ],
+        "recommendation": "Practice fundamental algorithms and improve problem-solving approach. Consider mock interviews."
+    },
+    "export_links": {
+        "pdf": "/export/S21ac15d1/report.pdf"
+    }
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "problemType": "sum",
+    "level": 1,
+    "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
+    "examples": [
+      {
+        "input": "nums = [2,7,11,15], target = 9",
+        "output": "[0,1]",
+        "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+      },
+      {
+        "input": "nums = [3,2,4], target = 6",
+        "output": "[1,2]",
+        "explanation": "Because nums[1] + nums[2] == 6, we return [1, 2]."
+      }
+    ],
+    "constraints": [
+      "2 <= nums.length <= 10^4",
+      "-10^9 <= nums[i] <= 10^9",
+      "-10^9 <= target <= 10^9",
+      "Only one valid answer exists."
+    ],
+    "testCases": [
+      {
+        "input": "[2,7,11,15]\n9",
+        "expectedOutput": "[0, 1]"
+      },
+      {
+        "input": "[3,2,4]\n6",
+        "expectedOutput": "[1, 2]"
+      },
+      {
+        "input": "[3,3]\n6",
+        "expectedOutput": "[0, 1]"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Three Sum",
+    "difficulty": "Medium",
+    "problemType": "sum",
+    "level": 2,
+    "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\n\nNotice that the solution set must not contain duplicate triplets.",
+    "examples": [
+      {
+        "input": "nums = [-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0."
+      },
+      {
+        "input": "nums = [0,1,1]",
+        "output": "[]",
+        "explanation": "The only possible triplet does not sum up to 0."
+      }
+    ],
+    "constraints": [
+      "3 <= nums.length <= 3000",
+      "-10^5 <= nums[i] <= 10^5"
+    ],
+    "testCases": [
+      {
+        "input": "[-1,0,1,2,-1,-4]",
+        "expectedOutput": "[[-1,-1,2],[-1,0,1]]"
+      },
+      {
+        "input": "[0,1,1]",
+        "expectedOutput": "[]"
+      },
+      {
+        "input": "[0,0,0]",
+        "expectedOutput": "[[0,0,0]]"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Four Sum",
+    "difficulty": "Hard",
+    "problemType": "sum",
+    "level": 3,
+    "description": "Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:\n\n- 0 <= a, b, c, d < n\n- a, b, c, and d are distinct.\n- nums[a] + nums[b] + nums[c] + nums[d] == target\n\nYou may return the answer in any order.",
+    "examples": [
+      {
+        "input": "nums = [1,0,-1,0,-2,2], target = 0",
+        "output": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]",
+        "explanation": "These are the unique quadruplets that sum to 0."
+      },
+      {
+        "input": "nums = [2,2,2,2,2], target = 8",
+        "output": "[[2,2,2,2]]",
+        "explanation": "The only unique quadruplet sums to 8."
+      }
+    ],
+    "constraints": [
+      "1 <= nums.length <= 200",
+      "-10^9 <= nums[i] <= 10^9",
+      "-10^9 <= target <= 10^9"
+    ],
+    "testCases": [
+      {
+        "input": "[1,0,-1,0,-2,2]\n0",
+        "expectedOutput": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+      },
+      {
+        "input": "[2,2,2,2,2]\n8",
+        "expectedOutput": "[[2,2,2,2]]"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "problemType": "palindrome",
+    "level": 1,
+    "description": "Given an integer x, return true if x is a palindrome, and false otherwise.\n\nAn integer is a palindrome when it reads the same backward as forward.",
+    "examples": [
+      {
+        "input": "x = 121",
+        "output": "true",
+        "explanation": "121 reads as 121 from left to right and from right to left."
+      },
+      {
+        "input": "x = -121",
+        "output": "false",
+        "explanation": "From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome."
+      }
+    ],
+    "constraints": [
+      "-2^31 <= x <= 2^31 - 1"
+    ],
+    "testCases": [
+      {
+        "input": "121",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "-121",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "10",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "problemType": "palindrome",
+    "level": 2,
+    "description": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\nGiven a string s, return true if it is a palindrome, or false otherwise.",
+    "examples": [
+      {
+        "input": "s = \"A man, a plan, a canal: Panama\"",
+        "output": "true",
+        "explanation": "\"amanaplanacanalpanama\" is a palindrome."
+      },
+      {
+        "input": "s = \"race a car\"",
+        "output": "false",
+        "explanation": "\"raceacar\" is not a palindrome."
+      }
+    ],
+    "constraints": [
+      "1 <= s.length <= 2 * 10^5",
+      "s consists only of printable ASCII characters."
+    ],
+    "testCases": [
+      {
+        "input": "\"A man, a plan, a canal: Panama\"",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "\"race a car\"",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "\" \"",
+        "expectedOutput": "true"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "problemType": "palindrome",
+    "level": 3,
+    "description": "Given a string s, return the longest palindromic substring in s.",
+    "examples": [
+      {
+        "input": "s = \"babad\"",
+        "output": "\"bab\"",
+        "explanation": "\"aba\" is also a valid answer."
+      },
+      {
+        "input": "s = \"cbbd\"",
+        "output": "\"bb\"",
+        "explanation": ""
+      }
+    ],
+    "constraints": [
+      "1 <= s.length <= 1000",
+      "s consist of only digits and English letters."
+    ],
+    "testCases": [
+      {
+        "input": "\"babad\"",
+        "expectedOutput": "\"bab\""
+      },
+      {
+        "input": "\"cbbd\"",
+        "expectedOutput": "\"bb\""
+      },
+      {
+        "input": "\"a\"",
+        "expectedOutput": "\"a\""
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Reverse Integer",
+    "difficulty": "Easy",
+    "problemType": "reverse",
+    "level": 1,
+    "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.\n\nAssume the environment does not allow you to store 64-bit integers (signed or unsigned).",
+    "examples": [
+      {
+        "input": "x = 123",
+        "output": "321",
+        "explanation": ""
+      },
+      {
+        "input": "x = -123",
+        "output": "-321",
+        "explanation": ""
+      },
+      {
+        "input": "x = 120",
+        "output": "21",
+        "explanation": ""
+      }
+    ],
+    "constraints": [
+      "-2^31 <= x <= 2^31 - 1"
+    ],
+    "testCases": [
+      {
+        "input": "123",
+        "expectedOutput": "321"
+      },
+      {
+        "input": "-123",
+        "expectedOutput": "-321"
+      },
+      {
+        "input": "120",
+        "expectedOutput": "21"
+      },
+      {
+        "input": "0",
+        "expectedOutput": "0"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Reverse String",
+    "difficulty": "Easy",
+    "problemType": "reverse",
+    "level": 2,
+    "description": "Write a function that reverses a string. The input string is given as an array of characters s.\n\nYou must do this by modifying the input array in-place with O(1) extra memory.",
+    "examples": [
+      {
+        "input": "s = [\"h\",\"e\",\"l\",\"l\",\"o\"]",
+        "output": "[\"o\",\"l\",\"l\",\"e\",\"h\"]",
+        "explanation": ""
+      },
+      {
+        "input": "s = [\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]",
+        "output": "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]",
+        "explanation": ""
+      }
+    ],
+    "constraints": [
+      "1 <= s.length <= 10^5",
+      "s[i] is a printable ascii character."
+    ],
+    "testCases": [
+      {
+        "input": "[\"h\",\"e\",\"l\",\"l\",\"o\"]",
+        "expectedOutput": "[\"o\",\"l\",\"l\",\"e\",\"h\"]"
+      },
+      {
+        "input": "[\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]",
+        "expectedOutput": "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Reverse Words in a String",
+    "difficulty": "Medium",
+    "problemType": "reverse",
+    "level": 3,
+    "description": "Given an input string s, reverse the order of the words.\n\nA word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.\n\nReturn a string of the words in reverse order concatenated by a single space.\n\nNote that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.",
+    "examples": [
+      {
+        "input": "s = \"the sky is blue\"",
+        "output": "\"blue is sky the\"",
+        "explanation": ""
+      },
+      {
+        "input": "s = \"  hello world  \"",
+        "output": "\"world hello\"",
+        "explanation": "Your reversed string should not contain leading or trailing spaces."
+      }
+    ],
+    "constraints": [
+      "1 <= s.length <= 10^4",
+      "s contains English letters (upper-case and lower-case), digits, and spaces ' '.",
+      "There is at least one word in s."
+    ],
+    "testCases": [
+      {
+        "input": "\"the sky is blue\"",
+        "expectedOutput": "\"blue is sky the\""
+      },
+      {
+        "input": "\"  hello world  \"",
+        "expectedOutput": "\"world hello\""
+      },
+      {
+        "input": "\"a good   example\"",
+        "expectedOutput": "\"example good a\""
+      }
+    ]
+  }
+]

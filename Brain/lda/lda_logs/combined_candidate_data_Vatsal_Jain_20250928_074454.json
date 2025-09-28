@@ -1,0 +1,719 @@
+{
+  "timestamp": "2025-09-28T07:44:54.057860",
+  "candidate_name": "Vatsal Jain",
+  "data_sources": {
+    "linkedin": true,
+    "resume": true
+  },
+  "linkedin_data": {
+    "linkedin_url": "https://www.linkedin.com/in/vatsaljain79/",
+    "name": "Vatsal Jain",
+    "about": "IIT Delhi's Electrical and Electronics Engineering program has equipped me with a solid foundation in problem-solving, teamwork, and technical excellence. During my Software Engineer Internship at Atlassian, I contributed to enhancing their data orchestration platform by enabling critical features, improving agility, and ensuring data lineage preservation, leveraging tools like Python, Airflow, and DBT.\n\nAs Technical Secretary, I spearheaded the first-ever Tech General Championship, driving innovation and collaboration. I also developed and maintained the TRYST website using React.js and Django, ensuring real-time updates for IIT Delhi’s annual tech fest. Focused on impactful projects, I aim to apply my technical expertise to solve complex challenges and foster growth in dynamic environments.",
+    "experiences": [
+      {
+        "institution_name": "Atlassian · Internship",
+        "linkedin_url": "https://www.linkedin.com/company/22688/",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": "May 2025",
+        "to_date": "Jul 2025",
+        "description": "Enhanced Atlassian's data orchestration platform by enabling flow descriptor renaming, improving agility and maintainability for 100+ teams. I ensured seamless environment updates and developed validation logic to preserve data lineage, saving hours of manual work. Additionally, built a solution for sending custom metrics from Python DBT jobs to SignalFX, enhancing real-time observability. My expertise spans Python, Airflow, DBT, Databricks, and more, backed by comprehensive documentation efforts for user adoption and operational excellence.\nEnhanced Atlassian's data orchestration platform by enabling flow descriptor renaming, improving agility and maintainability for 100+ teams. I ensured seamless environment updates and developed validation logic to preserve data lineage, saving hours of manual work. Additionally, built a solution for sending custom metrics from Python DBT jobs to SignalFX, enhancing real-time observability. My expertise spans Python, Airflow, DBT, Databricks, and more, backed by comprehensive documentation efforts for user adoption and operational excellence.\nSkills: Kotlin · Bitbucket · Confluence · Vaporeon · Kubernetes · Debugging · Apache Airflow · Minikube · Docker Products · Documentation · Software Industry · Data Analytics · Communication · Team Collaboration · Data Platform Engineering · Collaborative Problem Solving · Databricks Products · SignalFX\nKotlin · Bitbucket · Confluence · Vaporeon · Kubernetes · Debugging · Apache Airflow · Minikube · Docker Products · Documentation · Software Industry · Data Analytics · Communication · Team Collaboration · Data Platform Engineering · Collaborative Problem Solving · Databricks Products · SignalFX\nCompletion-Certificate.jpg\nCompletion-Certificate.jpg\nAtlassian Swags.jpg\nAtlassian Swags.jpg",
+        "position_title": "Software Engineer Intern",
+        "duration": "3 mos",
+        "location": "Bengaluru, Karnataka, India · On-site"
+      },
+      {
+        "institution_name": "Indian Institute of Technology, Delhi · Full-time",
+        "linkedin_url": "https://www.linkedin.com/company/157264/",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": "Apr 2024",
+        "to_date": "Apr 2025",
+        "description": "Managed the hostel website and Organized the first-ever Tech General Championship, leading the team to a First Runner-Up finish in Tech GC 2025.\nManaged the hostel website and Organized the first-ever Tech General Championship, leading the team to a First Runner-Up finish in Tech GC 2025.\nSkills: Management Skills · Administrative Assistance · Problem Solving · Web Development\nManagement Skills · Administrative Assistance · Problem Solving · Web Development\nTech_GC.jpg\nTech_GC.jpg\n1st Runner Up in Technical General Championship 2025\n1st Runner Up in Technical General Championship 2025",
+        "position_title": "Technical Secretary",
+        "duration": "1 yr 1 mo",
+        "location": "Delhi, India"
+      },
+      {
+        "institution_name": "TRYST, IIT Delhi · Full-time",
+        "linkedin_url": "https://www.linkedin.com/company/3538617/",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": "Jan 2025",
+        "to_date": "Mar 2025",
+        "description": "Developed and maintained the TRYST, IIT Delhi website using React.js and Django. Handled front-end design, back-end integration, and real-time event updates for the fest.\nDeveloped and maintained the TRYST, IIT Delhi website using React.js and Django. Handled front-end design, back-end integration, and real-time event updates for the fest.\nSkills: React.js · Front-End Development · Django\nReact.js · Front-End Development · Django\nTryst.jpg\nTryst.jpg",
+        "position_title": "Technical Coordinator",
+        "duration": "3 mos",
+        "location": ""
+      },
+      {
+        "institution_name": "UNSW · Internship",
+        "linkedin_url": "https://www.linkedin.com/company/6096/",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": "May 2024",
+        "to_date": "Jul 2024",
+        "description": "Working on the project \"Multi-View Sketch to 3D conversions using Gaussian Splatting\" in the field of Computer Vision.\nWorking on the project \"Multi-View Sketch to 3D conversions using Gaussian Splatting\" in the field of Computer Vision.\nSkills: Research Skills · Institutional Research · Python (Programming Language) · Computer Vision\nResearch Skills · Institutional Research · Python (Programming Language) · Computer Vision",
+        "position_title": "Summer Research Intern",
+        "duration": "3 mos",
+        "location": "Sydney, New South Wales, Australia · Remote"
+      },
+      {
+        "institution_name": "Rendezvous IITD · Full-time",
+        "linkedin_url": "https://www.linkedin.com/company/13202292/",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": "Jul 2023",
+        "to_date": "Oct 2023",
+        "description": "Managed Influencers United Event during RDV 2023\nManaged Influencers United Event during RDV 2023\nSkills: Management Skills · Communication\nManagement Skills · Communication",
+        "position_title": "Events Ac Head",
+        "duration": "4 mos",
+        "location": ""
+      }
+    ],
+    "educations": [
+      {
+        "institution_name": "Indian Institute of Technology, Delhi",
+        "linkedin_url": "https://www.linkedin.com/company/157264/",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": "2022",
+        "to_date": "2026",
+        "description": "Grade: 8.81\nGrade: 8.81\nAwarded for being in the top 7% merit list in semester 1 and semester 2 as well !!!\nAwarded for being in the top 7% merit list in semester 1 and semester 2 as well !!!\nSkills: Front-End Development · C++ · Python (Programming Language) · Ac Head in RDV events Vertical\nFront-End Development · C++ · Python (Programming Language) · Ac Head in RDV events Vertical",
+        "degree": "Bachelor of Technology - BTech, Electrical and Electronics Engineering"
+      },
+      {
+        "institution_name": "Blue Heaven Vidyalaya",
+        "linkedin_url": "https://www.linkedin.com/search/results/all/?keywords=Blue+Heaven+Vidyalaya",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": null,
+        "to_date": null,
+        "description": "Grade: 96.4\nGrade: 96.4",
+        "degree": "Senior secondary school "
+      },
+      {
+        "institution_name": "St. Anselm Sr. Sec School, Jaipur, Rajasthan ",
+        "linkedin_url": "https://www.linkedin.com/search/results/all/?keywords=St%2E+Anselm+Sr%2E+Sec+School%2C+Jaipur%2C+Rajasthan+",
+        "website": null,
+        "industry": null,
+        "type": null,
+        "headquarters": null,
+        "company_size": null,
+        "founded": null,
+        "from_date": null,
+        "to_date": null,
+        "description": "Grade: 96.4%\nGrade: 96.4%\nSkills: Team Leadership\nTeam Leadership",
+        "degree": "Secondary school "
+      }
+    ],
+    "licenses": [
+      {
+        "name": "Advanced Learning Algorithms",
+        "issuing_organization": "Coursera",
+        "issue_date": "Dec 2023",
+        "expiration_date": "",
+        "credential_id": "EKTMGYT9Y823",
+        "credential_url": null
+      },
+      {
+        "name": "Supervised Machine Learning: Regression and Classification",
+        "issuing_organization": "Coursera",
+        "issue_date": "Dec 2023",
+        "expiration_date": "",
+        "credential_id": "EHYRV6AM6JA9",
+        "credential_url": null
+      },
+      {
+        "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+        "issuing_organization": "DeepLearning.AI, Stanford University",
+        "issue_date": "Dec 2023",
+        "expiration_date": "",
+        "credential_id": "CWH9AMB4CYCJ",
+        "credential_url": null
+      }
+    ],
+    "projects": [
+      {
+        "title": "Tetris_Game_CV_Python",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nDeveloped an interactive, hand-gesture-controlled Tetris-inspired game using OpenCV and Mediapipe. Integrated real-time block movement detection, dynamic difficulty levels, and a scoring system to enhance engagement. Ensured seamless game flow with features like restart and high-score tracking\nDeveloped an interactive, hand-gesture-controlled Tetris-inspired game using OpenCV and Mediapipe. Integrated real-time block movement detection, dynamic difficulty levels, and a scoring system to enhance engagement. Ensured seamless game flow with features like restart and high-score tracking\nSkills: OpenCV · Mediapipe · Game Development\nOpenCV · Mediapipe · Game Development\nGitHub - vatsaljain79/Tetris_Game_CV_Python\nGitHub - vatsaljain79/Tetris_Game_CV_Python\nPython | OpenCV | MediaPipe | Game Development | Algorithm Design\nPython | OpenCV | MediaPipe | Game Development | Algorithm Design",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Jan 2025 - Jan 2025",
+        "url": null
+      },
+      {
+        "title": "Stock Market Simulation and Tracking Application",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nDeveloped a Stock Market Portfolio Management Platform using Flask, featuring real-time stock data, portfolio tracking, and interactive visualizations. Integrated Jugaad Data NSE API for live market updates and built tools for simulating buy/sell operations.\nDeveloped a Stock Market Portfolio Management Platform using Flask, featuring real-time stock data, portfolio tracking, and interactive visualizations. Integrated Jugaad Data NSE API for live market updates and built tools for simulating buy/sell operations.\nSkills: Flask · Database Management System (DBMS) · API integration · Authentication and Security · Financial Analysis\nFlask · Database Management System (DBMS) · API integration · Authentication and Security · Financial Analysis\nGitHub - vatsaljain79/Stock_Market_Stimulator\nGitHub - vatsaljain79/Stock_Market_Stimulator\nCreated a Flask-based stock portfolio manager with real-time data and interactive visualizations.\nCreated a Flask-based stock portfolio manager with real-time data and interactive visualizations.",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Nov 2024 - Dec 2024",
+        "url": null
+      },
+      {
+        "title": "Used Car Prediction Model",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nBuilt a machine learning pipeline to predict used car prices using a dataset of 50,000 listings. Implemented advanced preprocessing, feature engineering, and models like Random Forest, XGBoost, and neural networks. Achieved an R² of 0.68 using ensemble and stacking methods.\nBuilt a machine learning pipeline to predict used car prices using a dataset of 50,000 listings. Implemented advanced preprocessing, feature engineering, and models like Random Forest, XGBoost, and neural networks. Achieved an R² of 0.68 using ensemble and stacking methods.\nSkills: Machine Learning\nMachine Learning\nGitHub - vatsaljain79/Used_Car_Price_Prediction\nGitHub - vatsaljain79/Used_Car_Price_Prediction\nDelivered a scalable solution for fair pricing in the used car market.\nDelivered a scalable solution for fair pricing in the used car market.\nOther contributors\nOther contributors",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Aug 2024 - Nov 2024",
+        "url": null
+      },
+      {
+        "title": "Havannah Game Playing AI",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nDeveloped an AI agent for the strategic board game Havannah, featuring intelligent decision-making using Monte Carlo Tree Search (MCTS). Supports multiple game modes (Human vs AI, AI vs Random Agent, Human vs Human), configurable board sizes (4x4 to 10x10), and time-bound moves. The project includes a GUI and command-line interface, offering an engaging and adaptable gameplay experience.\nDeveloped an AI agent for the strategic board game Havannah, featuring intelligent decision-making using Monte Carlo Tree Search (MCTS). Supports multiple game modes (Human vs AI, AI vs Random Agent, Human vs Human), configurable board sizes (4x4 to 10x10), and time-bound moves. The project includes a GUI and command-line interface, offering an engaging and adaptable gameplay experience.\nSkills: Artificial Intelligence (AI) · Monte Carlo Tree Search · Game Theory\nArtificial Intelligence (AI) · Monte Carlo Tree Search · Game Theory\nGitHub - vatsaljain79/AI_Havannah_Game\nGitHub - vatsaljain79/AI_Havannah_Game\nHavannah Game Playing AI: Building Intelligent Decision-Making in Board Games\nHavannah Game Playing AI: Building Intelligent Decision-Making in Board Games",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Sep 2024 - Oct 2024",
+        "url": null
+      },
+      {
+        "title": "Document Processing Tool and Search Engine",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nCreated a search engine that will return all matching answers to an input query in\nthe corpus provided, similar to they way search engines return the results. For this, created a dictionary data structure for storing the word counts of the words in the document using AVL trees.\nThen implement a search mechanism to search for a string in the document. Given any pattern p, returned a list of all the offsets in the document at which the pattern is present in the text.\nCreated a search engine that will return all matching answers to an input query in the corpus provided, similar to they way search engines return the results. For this, created a dictionary data structure for storing the word counts of the words in the document using AVL trees. Then implement a search mechanism to search for a string in the document. Given any pattern p, returned a list of all the offsets in the document at which the pattern is present in the text.\nSkills: C++ · AVL trees · Search Engines · Rabin-Karp Algorithm\nC++ · AVL trees · Search Engines · Rabin-Karp Algorithm\nGitHub - vatsaljain79/COL106-A6-Document-Processing-Tool\nGitHub - vatsaljain79/COL106-A6-Document-Processing-Tool\nData Structure and Algorithm - Course Project - Under Prof Rahul Garg\nData Structure and Algorithm - Course Project - Under Prof Rahul Garg\nOther contributors\nOther contributors",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Nov 2023 - Nov 2023",
+        "url": null
+      },
+      {
+        "title": "Unlimited Int and Rationals + Expression Evaluator using Trees",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nCan make operations (+ - / * %) for numbers having any number of digits for int and rationals by making\nan array consisting of digits and performing operations on them that too in just O(n^2) (n=no. of digits). Made an expression Evaluator using basic knowledge of Tree Data Structure by storing the values of\nprevious variables in another tree and evaluate the value of other variable by performing the operations.\nCan make operations (+ - / * %) for numbers having any number of digits for int and rationals by making an array consisting of digits and performing operations on them that too in just O(n^2) (n=no. of digits). Made an expression Evaluator using basic knowledge of Tree Data Structure by storing the values of previous variables in another tree and evaluate the value of other variable by performing the operations.\nSkills: Implementing Super Long Integers in C++\nImplementing Super Long Integers in C++\nGitHub - vatsaljain79/COL106-A4-Implementation-of-Unlimited-Int-Rationals-and-Expression-Evaluator-for-Rational-Using-Tree\nData Structure and Algorithm - Course Project - Under Prof Rahul Garg\nData Structure and Algorithm - Course Project - Under Prof Rahul Garg",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Oct 2023 - Oct 2023",
+        "url": null
+      },
+      {
+        "title": "Bank data class and the concept of Hashing",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nMade an efficient Hash Function which in a Bank Data class which stores the balance and updates it\nalso. Extracting the information of an individual in O (1) amortized time, getting top k balances. Done in 3 different Parts – Chaining, Linear Probing, Quadratic Probing, Cubic probing for efficiency.\nMade an efficient Hash Function which in a Bank Data class which stores the balance and updates it also. Extracting the information of an individual in O (1) amortized time, getting top k balances. Done in 3 different Parts – Chaining, Linear Probing, Quadratic Probing, Cubic probing for efficiency.\nSkills: Hashing · C++\nHashing · C++\nGitHub - vatsaljain79/COL106-A3-Hashing-and-Hash-Functions\nGitHub - vatsaljain79/COL106-A3-Hashing-and-Hash-Functions\nData Structure and Algorithm - Course Project - Under Prof Rahul Garg\nData Structure and Algorithm - Course Project - Under Prof Rahul Garg",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Sep 2023 - Sep 2023",
+        "url": null
+      },
+      {
+        "title": "Clash Invaders",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nMade a “Clash Invader” Game using Python built in library “Pygame” and its related concepts. It involves\nfinishing of aliens before they touch us. As your score increases the toughness of the game increases !! Pygame Library: Its efficient functionalities enabled smooth gameplay and captivating visual effects, Sound effects, different interface for game enhance the overall gaming experience of the player.\nMade a “Clash Invader” Game using Python built in library “Pygame” and its related concepts. It involves finishing of aliens before they touch us. As your score increases the toughness of the game increases !! Pygame Library: Its efficient functionalities enabled smooth gameplay and captivating visual effects, Sound effects, different interface for game enhance the overall gaming experience of the player.\nSkills: Python (Programming Language) · Pygame\nPython (Programming Language) · Pygame\nClash Invaders\nClash Invaders\nSelf Project\nSelf Project",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Jun 2023 - Aug 2023",
+        "url": null
+      },
+      {
+        "title": "Monopoly Game",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nMade a two-player Monopoly game in python making strategic decisions all within a digital environment using the concepts of Object-Oriented Programming (OOPS) to model Properties and cards into classes. Used Python's built-in data structures, such as lists and dictionaries, to manage game\nelements like the game board, player assets, and property information, chances and community chests.\nMade a two-player Monopoly game in python making strategic decisions all within a digital environment using the concepts of Object-Oriented Programming (OOPS) to model Properties and cards into classes. Used Python's built-in data structures, such as lists and dictionaries, to manage game elements like the game board, player assets, and property information, chances and community chests.\nSkills: Python (Programming Language) · Object-Oriented Programming (OOP)\nPython (Programming Language) · Object-Oriented Programming (OOP)\nMonopoly Game\nMonopoly Game\nSelf Project\nSelf Project",
+        "from_date": "",
+        "to_date": "",
+        "associated_with": "Jun 2023 - Aug 2023",
+        "url": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Databricks Products",
+        "endorsements": 0
+      },
+      {
+        "name": "SignalFX",
+        "endorsements": 0
+      },
+      {
+        "name": "Vaporeon ",
+        "endorsements": 0
+      },
+      {
+        "name": "Debugging",
+        "endorsements": 0
+      },
+      {
+        "name": "Apache Airflow",
+        "endorsements": 0
+      },
+      {
+        "name": "Minikube",
+        "endorsements": 0
+      },
+      {
+        "name": "Docker Products",
+        "endorsements": 0
+      },
+      {
+        "name": "Documentation",
+        "endorsements": 0
+      },
+      {
+        "name": "Team Collaboration",
+        "endorsements": 0
+      },
+      {
+        "name": "Collaborative Problem Solving",
+        "endorsements": 0
+      },
+      {
+        "name": "Software Industry",
+        "endorsements": 0
+      },
+      {
+        "name": "Bitbucket",
+        "endorsements": 0
+      },
+      {
+        "name": "Confluence",
+        "endorsements": 0
+      },
+      {
+        "name": "Kotlin",
+        "endorsements": 0
+      },
+      {
+        "name": "Kubernetes",
+        "endorsements": 0
+      },
+      {
+        "name": "Data Analytics",
+        "endorsements": 0
+      },
+      {
+        "name": "Data Platform Engineering ",
+        "endorsements": 0
+      },
+      {
+        "name": "Web Development",
+        "endorsements": 0
+      },
+      {
+        "name": "Communication",
+        "endorsements": 0
+      },
+      {
+        "name": "React.js",
+        "endorsements": 0
+      }
+    ],
+    "courses": [
+      {
+        "name": "ANALYSIS & DESIGN OF ALGORITHMS",
+        "institution": "COL351",
+        "completion_date": ""
+      },
+      {
+        "name": "Artificial Intelligence",
+        "institution": "COL333",
+        "completion_date": ""
+      },
+      {
+        "name": "COMPUTER ARCHITECTURE",
+        "institution": "ELL305",
+        "completion_date": ""
+      },
+      {
+        "name": "Calculus",
+        "institution": "MTL100",
+        "completion_date": ""
+      },
+      {
+        "name": "DISCRETE MATHEMATICAL STRUCTURE",
+        "institution": "COL202",
+        "completion_date": ""
+      },
+      {
+        "name": "Data Structure and Algorithm",
+        "institution": "COL106",
+        "completion_date": ""
+      },
+      {
+        "name": "Digital Electronics",
+        "institution": "ELL201",
+        "completion_date": ""
+      },
+      {
+        "name": "Intro. to Computer Science",
+        "institution": "COL100",
+        "completion_date": ""
+      },
+      {
+        "name": "Linear Algebra and Differential Equations",
+        "institution": "MTL101",
+        "completion_date": ""
+      },
+      {
+        "name": "MACHINE INTELLIGENCE & LEARNING",
+        "institution": "ELL409",
+        "completion_date": ""
+      },
+      {
+        "name": "Macro Economics",
+        "institution": "HUL213",
+        "completion_date": ""
+      },
+      {
+        "name": "Micro Economics",
+        "institution": "HUL212",
+        "completion_date": ""
+      },
+      {
+        "name": "Probability and Stochastic Processes",
+        "institution": "MTL106",
+        "completion_date": ""
+      }
+    ],
+    "honors": [
+      {
+        "title": "International Quant Championship 2025 Stage 1",
+        "issuer": "Issued by WorldQuant Brain · Apr 2025",
+        "issue_date": "",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nReached Gold Level (10K+ points) in WorldQuant Challenge\nReached Gold Level (10K+ points) in WorldQuant Challenge\nCertificate.png\nCertificate.png\nReached Gold Level\nReached Gold Level"
+      },
+      {
+        "title": "Mathemania",
+        "issuer": "Issued by IIT Kanpur · Dec 2023",
+        "issue_date": "",
+        "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nRanked 8th among all teams participated and Reached till the last round of the competition.\nRanked 8th among all teams participated and Reached till the last round of the competition.\nMathemaina certificate.pdf\nMathemaina certificate.pdf"
+      },
+      {
+        "title": "KVPY SX Scholar",
+        "issuer": "Issued by Indian Institute of Science (IISC) · Jun 2022",
+        "issue_date": "",
+        "description": "Kishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India.\nKishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India."
+      },
+      {
+        "title": "IOQP(Indian Olympiad Qualifier in Physics)",
+        "issuer": "Issued by Indian Association of Physics Teachers (IAPT)  · Mar 2022",
+        "issue_date": "",
+        "description": "Among the top 1% in entire Rajasthan\nAmong the top 1% in entire Rajasthan"
+      },
+      {
+        "title": "IOQM(Indian Olympiad Qualifier in Mathematics)",
+        "issuer": "Issued by Indian Association of Physics Teachers (IAPT) · Feb 2021",
+        "issue_date": "",
+        "description": "Cleared Stage 1,2 in IOQM 2021\nQualified Regional Mathematics Olympiad & was amongst top 300 students in India selected for INMO.\nCleared Stage 1,2 in IOQM 2021 Qualified Regional Mathematics Olympiad & was amongst top 300 students in India selected for INMO."
+      },
+      {
+        "title": "KVPY SA Scholar",
+        "issuer": "Issued by Indian Institute of Science (IISC) · Feb 2021",
+        "issue_date": "",
+        "description": "AIR 600\nKishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India.\nAIR 600 Kishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India."
+      },
+      {
+        "title": "NTSE Scholar",
+        "issuer": "Issued by NCERT · Feb 2021",
+        "issue_date": "",
+        "description": "Associated with St. Anselm Sr. Sec School, Jaipur, Rajasthan \nAssociated with St. Anselm Sr. Sec School, Jaipur, Rajasthan\nNational Talent Search Examination (NTSE) is a national-level scholarship program in India to identify and recognize students with high intellect and academic talent. It is awarded to Top 2000 students out of 1 million candidates by the Government Of India.\nAlso State Rank - 20 in Stage 1 (190/200 score)\nNational Talent Search Examination (NTSE) is a national-level scholarship program in India to identify and recognize students with high intellect and academic talent. It is awarded to Top 2000 students out of 1 million candidates by the Government Of India. Also State Rank - 20 in Stage 1 (190/200 score)"
+      }
+    ],
+    "interests": [],
+    "accomplishments": [],
+    "contacts": [],
+    "scraped_at": "2025-09-28T07:44:37.156282"
+  },
+  "resume_data": {
+    "timestamp": "2025-09-28T02:14:54.044Z",
+    "filename": "resume_20250928_074348_f2d1b58c.pdf",
+    "sections": {
+      "HEADER": [
+        "VATSAL JAIN",
+        "VATSAL JAIN"
+      ],
+      "IIT COURSE": [
+        "Year",
+        "Degree / Board",
+        "Institute",
+        "GPA / Marks(%)",
+        "Degree",
+        "Institute",
+        "CGPA",
+        "Dept. Rank",
+        "---",
+        "B.Tech in Electrical Engineering",
+        "Indian Institute of Technology Delhi",
+        "8.81",
+        "B.Tech in Electrical Engineering",
+        "Indian Institute of Technology Delhi",
+        "8.81",
+        "21",
+        "2022",
+        "CBSE",
+        "Blue Heaven Vidyalaya, Jaipur",
+        "96.4",
+        "2020",
+        "CBSE",
+        "St. Anselm's Sr. Sec. School, Jaipur",
+        "96.4"
+      ],
+      "COURSES DONE": [
+        "Linear Algebra & Diffe. Equa., Data Structures And Algorithms, Probability & Stochastic Pro., Machine Intelligence&"
+      ],
+      "SCHOLASTIC ACHIEVEMENTS": [
+        "Learning, Computer Architecture, Discrete Mathematical Structur, Analysis & Design Of Algorithms",
+        "•",
+        "IIT Delhi Semester Merit Award:",
+        "Awarded for ranking among the",
+        "top 7%",
+        "of students academically in the",
+        "I and II semesters",
+        "•",
+        "Competitive Programming:",
+        "Reached a",
+        "rating of 1975 (Candidate Master)",
+        "on",
+        "Codeforces",
+        "and",
+        "2099 (5-Star)",
+        "on",
+        "CodeChef"
+      ],
+      "QUALIFYING EXAM": [
+        "•",
+        "Mathemania 2023:",
+        "Secured",
+        "8th position",
+        "in the final round among",
+        "150+ participating teams",
+        ", organized by",
+        "IIT Kanpur",
+        "•",
+        "Joint Entrance Examination (JEE) Advanced Rank:",
+        "503 (GE)",
+        "•",
+        "Minor in Computer Science:",
+        "Currently pursuing minor degree with focus on",
+        "programming, algorithms",
+        ", and",
+        "software skills",
+        "•",
+        "JEE Advanced 2022:",
+        "Secured",
+        "All India Rank 503",
+        "in the JEE Advanced exam amongst more than",
+        "160,000 candidates"
+      ],
+      "INTERNSHIPS": [
+        "• Runner Up, Code Decode 1.0",
+        "•",
+        "Atlassian, Bangalore | Data Analytics and Platform Engineering Intern",
+        "(May 2025 - Jul 2025)",
+        "• Second Runner Up, Pravritti- Code Crusaders",
+        "- Enabled",
+        "flow descriptor",
+        "renaming in Atlassian’s internal data pipelines by modifying validation logic in the repository,",
+        "• 2nd Runner Up, Quant-Decoded",
+        "preserving",
+        "orchestration integrity, historical run data",
+        ", and ensuring long-term workflow consistency across",
+        "100+ teams",
+        "• Member, Tech Committee - Member",
+        "- Built end-to-end observability into",
+        "Python-based DBT jobs",
+        "by integrating",
+        "StatsD",
+        "with",
+        "SignalFX",
+        "via custom",
+        "Databricks",
+        "• Organiser, House Day (January, 2000 - January, 2000)",
+        "init scripts",
+        ", now actively adopted by the Growth KYC team and available for use across",
+        "50+ Data Engineering teams",
+        "•",
+        "University of New South Wales (UNSW), Sydney | Research Intern",
+        "(May 2024 - Jul 2024)"
+      ],
+      "POSITIONS OF RESPONSIBILITY": [
+        "Multi-View Sketch to 3D conversions using Gaussian Splatting",
+        "|",
+        "Computer Vision",
+        "|",
+        "Prof. Rohitash Chandra",
+        ", UNSW",
+        "• Technical Coordinator , TRYST'25, CAIC (January, 2024 - January, 2025)",
+        "- Analyzed and comprehended existing codebases for",
+        "text to 3D generation",
+        "using Gaussian Splatting and multi-view sketch",
+        "• Technical Secretary, Jwalamukhi, BHM (June, 2024 - May, 2025)",
+        "guided text to 3D generation using the",
+        "NeRF network",
+        "and",
+        "Python libraries",
+        "to extract parameters from",
+        "silhouette sketch",
+        "• Activity Head, RendezvousX , BRCA (June, 2023 - May, 2024)",
+        "- Implemented a custom",
+        "Sketch Loss function",
+        "by minimizing error, preserving finer detail and",
+        "improved output quality",
+        "• BECON Executive, eDC, OTH (June, 2023 - May, 2024)",
+        "• Hult Marketing executive, Enactus, OTH (June, 2023 - May, 2024)"
+      ],
+      "PROJECTS": [
+        "•",
+        "AI Agent for Strategic Gameplay in Havannah",
+        "(Prof. Rohan Paul)",
+        "(Mar 2025)",
+        "- Designed an AI agent using",
+        "Monte Carlo Tree Search (MCTS)",
+        ", achieving a win rate of",
+        "100% against random agents",
+        "- Implemented various",
+        "heuristics",
+        "and strategies to identify",
+        "bridges",
+        "and assign more",
+        "weight",
+        "to certain moves based on heuristics",
+        "•",
+        "Stock Market Simulation and Tracking Application",
+        "(Prof. Huzur Saran)",
+        "(Jul 2024)",
+        "- Built a trading site using",
+        "Flask",
+        ", integrating",
+        "100+ NSE stocks",
+        "(via",
+        "Jugaad Data",
+        ") with",
+        "real-time Bokeh candlestick plots",
+        "- Executed strategy execution using",
+        "parallel threads",
+        ", achieving",
+        "4x improvement in latency",
+        "over sequential execution",
+        "- Designed secure authentication with",
+        "password hashing",
+        "and portfolio management using",
+        "SQLite",
+        "with",
+        "SQLAlchemy ORM",
+        "•",
+        "Search Engine and QnA Tool Application",
+        "(Prof. Subodh Sharma)",
+        "(Nov 2023)",
+        "- Developed a search engine using the",
+        "KMP algorithm",
+        ", matching patterns in a",
+        "10,000+ document corpus",
+        "with",
+        "100% accuracy",
+        "- Delivering",
+        "high-quality responses",
+        "to queries with the help of",
+        "API models",
+        "- ChatGPT, Hugging Face using",
+        "Prompt Engineering",
+        "- Designing an",
+        "Efficient Rank function",
+        "to get the top K most relevant paragraph from the corpus in response to a given query",
+        "•",
+        "Database Manager of Intricate Banking System in C++",
+        "(Prof. Rahul Garg)",
+        "(Sep 2023)",
+        "- Developed a",
+        "Bank Data Class",
+        "to maintain",
+        "transactions",
+        "between Bank and Individuals in",
+        "O(1) amortized time complexity",
+        "- Made an efficient",
+        "Double Hash Function",
+        "for optimization with a",
+        "minimal collision rate",
+        "of hash values in an array of size 10^6"
+      ],
+      "TECHNICAL SKILLS": [
+        "•",
+        "Programming Languages:",
+        "Python, C++, C, Verilog, Bash, MySQL, MATLAB, OCTAVE, LaTeX, HTML, CSS, JavaScript",
+        "•",
+        "Libraries and Tools:",
+        "PyTorch, TensorFlow, Django, NumPy, Pandas, Matplotlib, OpenCV, Git, Autodesk, Jupyter Notebook",
+        "EXTRA CURRICULAR ACTIVITIES",
+        "•",
+        "Jane Street Mystery Planet",
+        ":",
+        "1st Prize",
+        ", a 4-round event combining complex puzzles and a",
+        "trading strategy challenge",
+        "•",
+        "WorldQuant International Quant Championship 2024",
+        ": Achieved",
+        "Gold Level",
+        "and ranked",
+        "1207th",
+        "out of",
+        "76,000+ teams",
+        "•",
+        "Finalist",
+        "in",
+        "Lockout",
+        ", a",
+        "1v1 competitive coding tournament",
+        "with",
+        "250+ participants",
+        ", held during Tryst, the",
+        "Tech Fest",
+        "of IIT Delhi",
+        "• Secured",
+        "2nd Runner-Up",
+        "position in",
+        "Quant-Decoded",
+        ", a Coding + Quant competition with",
+        "150+ participants",
+        "at IIT Delhi",
+        "•",
+        "Convenor",
+        "of",
+        "Inter-Hostel Technical General Championship",
+        "and",
+        "Technical Secretary",
+        ", secured",
+        "2nd place",
+        "among all hostels",
+        "•",
+        "Technical Coordinator for Tryst",
+        ", IIT Delhi’s Tech Fest, managing and scaling the festival website used by",
+        "1000+ participants",
+        "Disclaimer: All the information on this page is entered by student.",
+        "Page 1",
+        "Disclaimer: All the data on this page is coming from IIT system.",
+        "Page 2"
+      ]
+    },
+    "metadata": {
+      "parserVersion": "custom-parser-v1.0.0",
+      "processingTime": 54,
+      "status": "success"
+    }
+  },
+  "metadata": {
+    "scraper_version": "unified_scraper_v1.0.0",
+    "linkedin_entries": 49,
+    "resume_entries": 248,
+    "total_entries": 297
+  }
+}

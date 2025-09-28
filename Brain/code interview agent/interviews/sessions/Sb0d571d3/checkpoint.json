@@ -1,0 +1,51 @@
+{
+  "session_id": "Sb0d571d3",
+  "candidate": {
+    "name": "0oAstro",
+    "user_id": "u0b29b5"
+  },
+  "problem": {
+    "id": "unknown",
+    "title": "Unknown Problem",
+    "difficulty": "medium",
+    "language": "python"
+  },
+  "time": {
+    "start": "2025-09-27T10:39:24.480608",
+    "current": "2025-09-27T10:39:24.481329",
+    "time_allowed_min": 10,
+    "time_used_min": 0.0
+  },
+  "scores": {
+    "final": 0,
+    "components": {
+      "correctness": 0,
+      "optimality": 0,
+      "code_quality": 0,
+      "understanding": 0,
+      "communication": 0,
+      "penalties": 0,
+      "progression_bonus": 0
+    }
+  },
+  "tests": {
+    "public": [],
+    "hidden": {
+      "passed": 0,
+      "total": 0
+    }
+  },
+  "hints": [],
+  "timeline": [
+    {
+      "timestamp": "2025-09-27T10:39:24.481297",
+      "event": "session_start",
+      "text": "Interview session Sb0d571d3 started"
+    }
+  ],
+  "conversation_log": [],
+  "code_snapshots": [],
+  "final_code": "",
+  "status": "in_progress",
+  "last_save": "2025-09-27T10:39:24.481329"
+}

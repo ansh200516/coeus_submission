@@ -1,0 +1,335 @@
+{
+    "metadata": {
+        "consolidation_timestamp": "2025-09-28T04:35:51.499167",
+        "consolidator_version": "1.0.0",
+        "sources": {
+            "lda_interview": true,
+            "code_interview": true
+        }
+    },
+    "summary": {
+        "overall_summary": "The candidate, Vatsal, opened the interview by claiming a senior software engineer role at Google but did not substantiate this claim. When prompted to provide a detailed, line‑by‑line architecture for server‑side rendering with React and Django, the candidate offered no technical explanation, code snippets, or design considerations, leaving the interviewer without evidence of the required depth of knowledge.",
+        "strengths": [
+            "Demonstrated confidence by stating a senior position at a high‑profile company."
+        ],
+        "areas_for_improvement": [
+            "Did not provide any concrete technical details or code examples when asked to design a complex full‑stack solution.",
+            "Failed to address key architectural components such as caching, connection pooling, and CSRF handling.",
+            "Made an unverified claim about experience without supporting evidence, raising concerns about credibility."
+        ],
+        "hiring_recommendation_from_lda": "No Hire"
+    },
+    "static_knowledge": {
+        "linkedin": [
+            "Vatsal Jain",
+            "IIT Delhi's Electrical and Electronics Engineering program has equipped me with a solid foundation in problem-solving, teamwork, and technical excellence. During my Software Engineer Internship at Atlassian, I contributed to enhancing their data orchestration platform by enabling critical features, improving agility, and ensuring data lineage preservation, leveraging tools like Python, Airflow, and DBT.\n\nAs Technical Secretary, I spearheaded the first-ever Tech General Championship, driving innovation and collaboration. I also developed and maintained the TRYST website using React.js and Django, ensuring real-time updates for IIT Delhi’s annual tech fest. Focused on impactful projects, I aim to apply my technical expertise to solve complex challenges and foster growth in dynamic environments.",
+            "Software Engineer Intern at Atlassian · Internship (3 mos) - Bengaluru, Karnataka, India · On-site",
+            "Enhanced Atlassian's data orchestration platform by enabling flow descriptor renaming, improving agility and maintainability for 100+ teams",
+            "I ensured seamless environment updates and developed validation logic to preserve data lineage, saving hours of manual work",
+            "Additionally, built a solution for sending custom metrics from Python DBT jobs to SignalFX, enhancing real-time observability",
+            "My expertise spans Python, Airflow, DBT, Databricks, and more, backed by comprehensive documentation efforts for user adoption and operational excellence.\nEnhanced Atlassian's data orchestration platform by enabling flow descriptor renaming, improving agility and maintainability for 100+ teams",
+            "I ensured seamless environment updates and developed validation logic to preserve data lineage, saving hours of manual work",
+            "Additionally, built a solution for sending custom metrics from Python DBT jobs to SignalFX, enhancing real-time observability",
+            "Technical Secretary at Indian Institute of Technology, Delhi · Full-time (1 yr 1 mo) - Delhi, India",
+            "Technical Coordinator at TRYST, IIT Delhi · Full-time (3 mos)",
+            "Developed and maintained the TRYST, IIT Delhi website using React.js and Django",
+            "Handled front-end design, back-end integration, and real-time event updates for the fest.\nDeveloped and maintained the TRYST, IIT Delhi website using React.js and Django",
+            "Summer Research Intern at UNSW · Internship (3 mos) - Sydney, New South Wales, Australia · Remote",
+            "Events Ac Head at Rendezvous IITD · Full-time (4 mos)",
+            "Bachelor of Technology - BTech, Electrical and Electronics Engineering from Indian Institute of Technology, Delhi (2022 - 2026)",
+            "GPA: 8.81 at Indian Institute of Technology, Delhi",
+            "Senior secondary school  from Blue Heaven Vidyalaya",
+            "GPA: 96.4 at Blue Heaven Vidyalaya",
+            "Secondary school  from St. Anselm Sr. Sec School, Jaipur, Rajasthan ",
+            "GPA: 96.4% at St. Anselm Sr. Sec School, Jaipur, Rajasthan ",
+            "Databricks Products",
+            "SignalFX",
+            "Vaporeon ",
+            "Debugging",
+            "Apache Airflow",
+            "Minikube",
+            "Docker Products",
+            "Documentation",
+            "Team Collaboration",
+            "Collaborative Problem Solving",
+            "Software Industry",
+            "Bitbucket",
+            "Confluence",
+            "Kotlin",
+            "Kubernetes",
+            "Data Analytics",
+            "Data Platform Engineering ",
+            "Web Development",
+            "Communication",
+            "React.js",
+            "Tetris_Game_CV_Python (Jan 2025 - Jan 2025)",
+            "Stock Market Simulation and Tracking Application (Nov 2024 - Dec 2024)",
+            "Used Car Prediction Model (Aug 2024 - Nov 2024)",
+            "Havannah Game Playing AI (Sep 2024 - Oct 2024)",
+            "Document Processing Tool and Search Engine (Nov 2023 - Nov 2023)",
+            "Unlimited Int and Rationals + Expression Evaluator using Trees (Oct 2023 - Oct 2023)",
+            "Bank data class and the concept of Hashing (Sep 2023 - Sep 2023)",
+            "Clash Invaders (Jun 2023 - Aug 2023)",
+            "Monopoly Game (Jun 2023 - Aug 2023)",
+            "Advanced Learning Algorithms from Coursera (Dec 2023)",
+            "Supervised Machine Learning: Regression and Classification from Coursera (Dec 2023)",
+            "Unsupervised Learning, Recommenders, Reinforcement Learning from DeepLearning.AI, Stanford University (Dec 2023)",
+            "International Quant Championship 2025 Stage 1 - Issued by WorldQuant Brain · Apr 2025",
+            "Mathemania - Issued by IIT Kanpur · Dec 2023",
+            "KVPY SX Scholar - Issued by Indian Institute of Science (IISC) · Jun 2022",
+            "IOQP(Indian Olympiad Qualifier in Physics) - Issued by Indian Association of Physics Teachers (IAPT)  · Mar 2022",
+            "IOQM(Indian Olympiad Qualifier in Mathematics) - Issued by Indian Association of Physics Teachers (IAPT) · Feb 2021",
+            "KVPY SA Scholar - Issued by Indian Institute of Science (IISC) · Feb 2021",
+            "NTSE Scholar - Issued by NCERT · Feb 2021"
+        ],
+        "resume": [
+            "VATSAL JAIN",
+            "B.Tech in Electrical Engineering",
+            "Indian Institute of Technology Delhi",
+            "GPA: 8.81",
+            "B.Tech in Electrical Engineering",
+            "Indian Institute of Technology Delhi",
+            "GPA: 8.81",
+            "GPA: 21",
+            "GPA: 2022",
+            "GPA: 96.4",
+            "GPA: 2020",
+            "GPA: 96.4",
+            "Atlassian, Bangalore | Data Analytics and Platform Engineering Intern",
+            "renaming in Atlassian’s internal data pipelines by modifying validation logic in the repository,",
+            "University of New South Wales (UNSW), Sydney | Research Intern",
+            "AI Agent for Strategic Gameplay in Havannah",
+            "- Designed an AI agent using",
+            "Monte Carlo Tree Search (MCTS)",
+            "Stock Market Simulation and Tracking Application",
+            "- Built a trading site using",
+            "Search Engine and QnA Tool Application",
+            "- Developed a search engine using the",
+            "Database Manager of Intricate Banking System in C++",
+            "Python",
+            "C++",
+            "Verilog",
+            "Bash",
+            "MySQL",
+            "MATLAB",
+            "OCTAVE",
+            "LaTeX",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PyTorch",
+            "TensorFlow",
+            "Django",
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "OpenCV",
+            "Git",
+            "Autodesk",
+            "Jupyter Notebook",
+            "EXTRA CURRICULAR ACTIVITIES",
+            "Jane Street Mystery Planet",
+            "1st Prize",
+            "a 4-round event combining complex puzzles and a",
+            "trading strategy challenge",
+            "WorldQuant International Quant Championship 2024",
+            "Gold Level",
+            "and ranked",
+            "1207th",
+            "out of",
+            "000+ teams",
+            "Finalist",
+            "Lockout",
+            "1v1 competitive coding tournament",
+            "with",
+            "250+ participants",
+            "held during Tryst",
+            "the",
+            "Tech Fest",
+            "of IIT Delhi",
+            "• Secured",
+            "2nd Runner-Up",
+            "position in",
+            "Quant-Decoded",
+            "a Coding + Quant competition with",
+            "150+ participants",
+            "at IIT Delhi",
+            "Convenor",
+            "Inter-Hostel Technical General Championship",
+            "Technical Secretary",
+            "secured",
+            "2nd place",
+            "among all hostels",
+            "Technical Coordinator for Tryst",
+            "IIT Delhi’s Tech Fest",
+            "managing and scaling the festival website used by",
+            "1000+ participants",
+            "Page 1",
+            "Page 2"
+        ]
+    },
+    "job_description": [
+        "Design, develop, and deploy scalable and robust web applications that leverage AI and machine learning capabilities.",
+        "Collaborate closely with AI/ML engineers, product managers, and UX/UI designers to translate complex AI functionalities into user-friendly features.",
+        "Contribute to all layers of the application stack, from database design and API development to responsive frontend interfaces.",
+        "Optimize web applications for performance, scalability, and security, ensuring a smooth experience for thousands of users.",
+        "Participate in code reviews, technical discussions, and architectural planning to uphold high standards of software quality and innovation.",
+        "Identify and resolve technical challenges, debug issues in cloud environments, and continuously improve our development processes.",
+        "Stay up-to-date with emerging technologies and industry best practices in AI, web development, and cloud computing.",
+        "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field",
+        "Minimum 3-5 years of hands-on experience in full-stack web development",
+        "Proficiency in at least one modern frontend framework (e.g., React, Vue.js) and experience with JavaScript/TypeScript",
+        "Experience with backend development using languages such as Python (preferably Flask), Java, Node.js, or similar",
+        "Familiarity with database technologies (SQL, NoSQL) and experience with designing and interacting with APIs (RESTful, GraphQL)",
+        "Understanding of cloud platforms (e.g., AWS, GCP, Azure) and experience with deploying and managing applications in a cloud environment",
+        "Demonstrated passion for artificial intelligence and machine learning, with an interest in building AI-driven products",
+        "Familiarity and passion for AI tools like Cursor, Claud, Gemini, etc in software development skills",
+        "Strong problem-solving skills, attention to detail, and a commitment to delivering high-quality software",
+        "Excellent communication and collaboration skills, with the ability to work effectively in a fast-paced, agile environment",
+        "Zone A Base annual salary range: $135,570 to $181,000",
+        "Discretionary annual bonus up to 15%",
+        "Pre-IPO equity (stock options)",
+        "Santa Clara, CA (Hybrid)"
+    ],
+    "lies": [],
+    "candidate_scores": {
+        "candidate": {
+            "name": "harsh",
+            "user_id": "S2ed50e1f"
+        },
+        "problem": {
+            "id": "9",
+            "title": "Reverse Words in a String",
+            "difficulty": "medium",
+            "language": "python"
+        },
+        "scores": {
+            "final": 34,
+            "components": {
+                "correctness": 0,
+                "optimality": 15,
+                "code_quality": 0,
+                "understanding": 9,
+                "communication": 10,
+                "penalties": 0
+            }
+        },
+        "time_performance": {
+            "time_allowed_min": 20,
+            "time_used_min": 0,
+            "start_time": "2025-09-28T00:39:00.796720",
+            "end_time": "2025-09-27T19:13:06.014793+00:00"
+        },
+        "test_results": {
+            "public_tests": [],
+            "hidden_tests": {
+                "passed": 0,
+                "total": 0
+            }
+        },
+        "feedback": {
+            "strengths": [
+                "Good communication throughout",
+                "Demonstrated solid understanding"
+            ],
+            "weaknesses": [
+                "Accuracy in implementation needs improvement",
+                "Code organization and clarity could be enhanced"
+            ],
+            "recommendation": "Practice fundamental algorithms and improve problem-solving approach. Consider mock interviews."
+        }
+    },
+    "hirability_score": {
+        "overall_score": 33.82,
+        "recommendation": "No Hire",
+        "category_breakdown": {
+            "technical_skills": {
+                "score": 29.03225806451613,
+                "matches": [
+                    "python",
+                    "javascript",
+                    "react",
+                    "django",
+                    "java",
+                    "c++",
+                    "sql",
+                    "mysql",
+                    "docker",
+                    "kubernetes",
+                    "git",
+                    "html",
+                    "css"
+                ],
+                "match_count": 13
+            },
+            "ai_ml_experience": {
+                "score": 36.11111111111111,
+                "matches": [
+                    "machine learning",
+                    "ai",
+                    "ml",
+                    "pytorch",
+                    "tensorflow",
+                    "model",
+                    "algorithm",
+                    "pandas",
+                    "numpy",
+                    "opencv"
+                ],
+                "match_count": 10
+            },
+            "experience_level": {
+                "score": 36.666666666666664,
+                "matches": [
+                    "senior",
+                    "manager",
+                    "internship",
+                    "full-time",
+                    "engineer",
+                    "software",
+                    "project",
+                    "team"
+                ],
+                "match_count": 8
+            },
+            "education_background": {
+                "score": 33.33333333333333,
+                "matches": [
+                    "engineering",
+                    "bachelor",
+                    "university",
+                    "iit",
+                    "mit",
+                    "stanford",
+                    "gpa"
+                ],
+                "match_count": 7
+            },
+            "soft_skills": {
+                "score": 37.5,
+                "matches": [
+                    "communication",
+                    "collaboration",
+                    "teamwork",
+                    "problem solving",
+                    "innovation",
+                    "documentation"
+                ],
+                "match_count": 6
+            }
+        },
+        "estimated_experience_years": 1.2,
+        "scoring_methodology": {
+            "technical_skills": "30.0%",
+            "ai_ml_experience": "25.0%",
+            "experience_level": "20.0%",
+            "education_background": "15.0%",
+            "soft_skills": "10.0%"
+        },
+        "analysis_summary": {
+            "total_linkedin_claims": 60,
+            "total_resume_claims": 83,
+            "job_requirements_analyzed": 21
+        }
+    }
+}

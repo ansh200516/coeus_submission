@@ -1,0 +1,25 @@
+[2025-09-27T15:33:31.731571] INTERVIEWER: Hello ansh! I'm your AI interviewer for today's coding session. 
+        I've selected the Reverse Words in a String problem for you - it's a 
+        Medium-level question that should take about 
+        20 minutes. The boilerplate and driver code are already 
+        provided - you just need to implement the solution function. I'll be here to help guide you through it. 
+        Feel free to think out loud and ask questions. Let's get started!
+
+[2025-09-27T15:33:34.104135] CANDIDATE: So yeah. You interface it or you text box.
+
+[2025-09-27T15:33:38.239514] INTERVIEWER: Good thinking, what's your next step?
+
+[2025-09-27T15:33:44.277223] CANDIDATE: I'll be really honest. Uh, most probably, uh, English language and
+
+[2025-09-27T15:33:46.490162] INTERVIEWER: I see, that's a good approach.
+
+[2025-09-27T15:33:54.774124] CANDIDATE: So this is all your verbal, uh,
+
+[2025-09-27T15:33:59.218584] INTERVIEWER: That makes sense, keep going.
+
+[2025-09-27T15:34:03.237263] CANDIDATE: interaction.
+
+[2025-09-27T15:34:06.797896] INTERVIEWER: I see, that's a good approach.
+
+[2025-09-27T15:34:18.265231] INTERVIEWER: Thank you for your time today, ansh. You showed good problem-solving skills and I appreciate your effort. Keep practicing and you'll continue to improve!
+

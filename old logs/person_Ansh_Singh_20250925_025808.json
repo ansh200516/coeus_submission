@@ -1,0 +1,288 @@
+{
+  "linkedin_url": "https://www.linkedin.com/in/anshsingh200516/",
+  "name": "Ansh Singh",
+  "about": "I am an undergraduate student at the Indian Institute of Technology Delhi, pursuing a major in Civil Engineering and a Minor in Computer Science. My academic journey has been guided by a deep passion for machine learning, artificial intelligence, and the mathematics that underpins these transformative technologies.\n\nFascinated by the power of AI to solve complex problems, I have developed a strong interest in areas such as computer vision, natural language processing, and reinforcement learning. The mathematical foundations of machine learning, from optimization to probability theory, captivate me and drive my curiosity to explore more advanced topics.\n\nI am particularly intrigued by reinforcement learning, where I see immense potential for innovation in developing intelligent systems capable of decision-making and adaptability. My journey in AI has been one of continuous learning, applying concepts to real-world challenges, and contributing to meaningful advancements in the field.\n\nBeyond academics and research, I enjoy solving puzzles, listening music, reading novels and staying up to date with the latest developments in technology. I thrive in collaborative and interdisciplinary environments, where I can merge my technical expertise with creative problem-solving to make a positive impact.\n\nLet’s connect to explore opportunities for collaboration, research, or innovation at the exciting intersection of AI, mathematics, and real-world applications!",
+  "experiences": [
+    {
+      "institution_name": "Department of Computer Science, Aarhus University · Full-time",
+      "linkedin_url": "https://www.linkedin.com/company/11529365/",
+      "website": null,
+      "industry": null,
+      "type": null,
+      "headquarters": null,
+      "company_size": null,
+      "founded": null,
+      "from_date": "May 2025",
+      "to_date": "Present",
+      "description": "Working on enhancing the reliability of large language models using self-reflection techniques. Developing autonomous agents that iteratively detect and correct their own reasoning errors. Building evaluation pipelines and running experiments to improve factual accuracy and robustness. Focused on real-world applications in AI safety and model reliability. Funded by the Danish Data Science Academy.\nWorking on enhancing the reliability of large language models using self-reflection techniques. Developing autonomous agents that iteratively detect and correct their own reasoning errors. Building evaluation pipelines and running experiments to improve factual accuracy and robustness. Focused on real-world applications in AI safety and model reliability. Funded by the Danish Data Science Academy.\nSkills: Business Research · Python (Programming Language) · Information Research · Program Trading · Automated Trading\nBusiness Research · Python (Programming Language) · Information Research · Program Trading · Automated Trading",
+      "position_title": "Research Intern",
+      "duration": "5 mos",
+      "location": "Aarhus, Central Denmark Region, Denmark · On-site"
+    },
+    {
+      "institution_name": "ARIES (Artificial Intelligence Society), IITD",
+      "linkedin_url": "https://www.linkedin.com/company/102535780/",
+      "website": null,
+      "industry": null,
+      "type": null,
+      "headquarters": null,
+      "company_size": null,
+      "founded": null,
+      "from_date": "Full-time",
+      "to_date": "",
+      "description": "Coordinator\nCoordinator\nApr 2025 - Present · 6 mos\nApr 2025 to Present · 6 mos\nExecutive\nExecutive\nNov 2024 - Apr 2025 · 6 mos\nNov 2024 to Apr 2025 · 6 mos\nNew Delhi, Delhi, India\nNew Delhi, Delhi, India",
+      "position_title": "",
+      "duration": "11 mos",
+      "location": "Hybrid"
+    },
+    {
+      "institution_name": "DevClub IIT Delhi · Part-time",
+      "linkedin_url": "https://www.linkedin.com/company/43269483/",
+      "website": null,
+      "industry": null,
+      "type": null,
+      "headquarters": null,
+      "company_size": null,
+      "founded": null,
+      "from_date": "Sep 2024",
+      "to_date": "Jun 2025",
+      "description": "",
+      "position_title": "Executive",
+      "duration": "10 mos",
+      "location": "Delhi, India · Hybrid"
+    },
+    {
+      "institution_name": "Internship · 6 mos",
+      "linkedin_url": "https://www.linkedin.com/company/157264/",
+      "website": null,
+      "industry": null,
+      "type": null,
+      "headquarters": null,
+      "company_size": null,
+      "founded": null,
+      "from_date": "New Delhi,",
+      "to_date": "India",
+      "description": "Research Intern\nResearch Intern\nNov 2024 - Jan 2025 · 3 mos\nNov 2024 to Jan 2025 · 3 mos\nResearch Internship @ Multi Model Lab IIT Delhi under Professor Sumantra Dutta Roy, focusing on “Better models, better metrics, better understanding, and better framework for improved hand gesture biometric capacity quantification”.\nThis project is in continuation to the “Delta Gesture Biometric Quantification Assessment” paper from Multi-Model Lab IIT Delhi whose contribution was creating the first metric (DGBQA score) that allows assessing the behaviorial and physiological traits of a Hand Gesture for Biometrics.\nObjectives:\n1. Introduce architectural modifications in the existing model to enable it to learn multi-grained features for predicting the score.\n2. Create a new metric for evaluating how reliable the hand gesture biometric analysis score is.\n3. Determine how to design a sample such that orthogonalization can be performed efficiently within limited memory.\n4. Make the entire framework as interpretable as possible\nResearch Internship @ Multi Model Lab IIT Delhi under Professor Sumantra Dutta Roy, focusing on “Better models, better metrics, better understanding, and better framework for improved hand gesture biometric capacity quantification”. This project is in continuation to the “Delta Gesture Biometric Quantification Assessment” paper from Multi-Model Lab IIT Delhi whose contribution was creating the first metric (DGBQA score) that allows assessing the behaviorial and physiological traits of a Hand Gesture for Biometrics. Objectives: 1. Introduce architectural modifications in the existing model to enable it to learn multi-grained features for predicting the score. 2. Create a new metric for evaluating how reliable the hand gesture biometric analysis score is. 3. Determine how to design a sample such that orthogonalization can be performed efficiently within limited memory. 4. Make the entire framework as interpretable as possible\nMlOps Intern\nMlOps Intern\nAug 2024 - Oct 2024 · 3 mos\nAug 2024 to Oct 2024 · 3 mos\nMLOps Intern @ Vision Lab IIT Delhi under Prof. Chetan Arora Computer Science department IIT D\nProjects done :\n1. Mammography report generator\n2. Lipikar OCR Viewer\nMLOps Intern @ Vision Lab IIT Delhi under Prof. Chetan Arora Computer Science department IIT D Projects done : 1. Mammography report generator 2. Lipikar OCR Viewer",
+      "position_title": "Indian Institute of Technology, Delhi",
+      "duration": "On-site",
+      "location": ""
+    }
+  ],
+  "educations": [
+    {
+      "institution_name": "Indian Institute of Technology, Delhi",
+      "linkedin_url": "https://www.linkedin.com/company/157264/",
+      "website": null,
+      "industry": null,
+      "type": null,
+      "headquarters": null,
+      "company_size": null,
+      "founded": null,
+      "from_date": "2024",
+      "to_date": "2027",
+      "description": "",
+      "degree": "Minor, Computer Science"
+    },
+    {
+      "institution_name": "Indian Institute of Technology, Delhi",
+      "linkedin_url": "https://www.linkedin.com/company/157264/",
+      "website": null,
+      "industry": null,
+      "type": null,
+      "headquarters": null,
+      "company_size": null,
+      "founded": null,
+      "from_date": "2023",
+      "to_date": "2027",
+      "description": "Skills: Computer Science · Communication · Analytical Skills · Optimization Techniques · Problem Solving · Mathematics\nComputer Science · Communication · Analytical Skills · Optimization Techniques · Problem Solving · Mathematics",
+      "degree": "Bachelor of Technology - BTech, Civil Engineering"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "IIT Delhi Data Challenge ",
+      "issuing_organization": "Citadel",
+      "issue_date": "Oct 2024",
+      "expiration_date": "",
+      "credential_id": "",
+      "credential_url": null
+    },
+    {
+      "name": "Machine learning specialization ",
+      "issuing_organization": "DeepLearning.AI",
+      "issue_date": "Jul 2024",
+      "expiration_date": "",
+      "credential_id": "",
+      "credential_url": null
+    }
+  ],
+  "projects": [
+    {
+      "title": "Lipikar OCR viewer",
+      "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nWorked with a team under Prof. Chetan Arora CSE Department IIT Delhi in making of Lipikar OCR Viewer ap- plication that uses Hi-SAM (Hierarchical Segment Anything Model) for detection and PARSeq (Parallel Sequence- to-Sequence Model) for recognition tasks, It allows the user to upload a batch of images or a multi-page pdf and get the text in the form of .txt or searchable pdfs\nWorked with a team under Prof. Chetan Arora CSE Department IIT Delhi in making of Lipikar OCR Viewer ap- plication that uses Hi-SAM (Hierarchical Segment Anything Model) for detection and PARSeq (Parallel Sequence- to-Sequence Model) for recognition tasks, It allows the user to upload a batch of images or a multi-page pdf and get the text in the form of .txt or searchable pdfs\nSkills: React.js · Parseq · Object Detection · Text Recognition · Hi-SAM · Flask\nReact.js · Parseq · Object Detection · Text Recognition · Hi-SAM · Flask\nDemo Video\nDemo Video\nWhatsApp Image 2024-09-28 at 18.03.27.jpeg\nWhatsApp Image 2024-09-28 at 18.03.27.jpeg\nLanding Page\nLanding Page\nWhatsApp Image 2024-10-01 at 18.47.33.jpeg\nWhatsApp Image 2024-10-01 at 18.47.33.jpeg\nOCR team\nOCR team",
+      "from_date": "",
+      "to_date": "",
+      "associated_with": "Sep 2024 - Oct 2024",
+      "url": null
+    },
+    {
+      "title": "Mammography Report Generator",
+      "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nThe app transcribes audio conversations between doctors and patients using Whisper (an ASR model) and generates an editable report in English via GPT-4o, adhering to mammography guidelines. Users have the flexibility to modify the report as needed. It tracks real-time processing times for transparency and allows reports to be downloaded in PDF and Excel formats, ensuring they are formatted to medical standards. The backend logs key data for performance tracking and continuous improvement.\n\nTechnology Stack:\n\n • Speech-to-text: Whisper model via API.\n • NLP: GPT-4o via API for report generation.\n • Frontend: Built using Streamlit for a responsive, smooth user experience.\n • Backend: Efficient logging and data storage for future analysis and improvements.\n • File formats: Downloadable reports in PDF and Excel.\nhttps://www.linkedin.com/in/ansh-singh-a951a92b8/recent-activity/all/\nThe app transcribes audio conversations between doctors and patients using Whisper (an ASR model) and generates an editable report in English via GPT-4o, adhering to mammography guidelines. Users have the flexibility to modify the report as needed. It tracks real-time processing times for transparency and allows reports to be downloaded in PDF and Excel formats, ensuring they are formatted to medical standards. The backend logs key data for performance tracking and continuous improvement. Technology Stack: • Speech-to-text: Whisper model via API. • NLP: GPT-4o via API for report generation. • Frontend: Built using Streamlit for a responsive, smooth user experience. • Backend: Efficient logging and data storage for future analysis and improvements. • File formats: Downloadable reports in PDF and Excel. https://www.linkedin.com/in/ansh-singh-a951a92b8/recent-activity/all/\nSkills: React.js · streamlit · Prompt Engineering · audio speech recognition · Large Language Models (LLM) · Large Language Model Operations (LLMOps) · Problem Solving · Applied Machine Learning · Optimization Techniques · Computer Science\nReact.js · streamlit · Prompt Engineering · audio speech recognition · Large Language Models (LLM) · Large Language Model Operations (LLMOps) · Problem Solving · Applied Machine Learning · Optimization Techniques · Computer Science\nScreenshot 2024-09-06 at 4.23.33 PM.png\nScreenshot 2024-09-06 at 4.23.33 PM.png",
+      "from_date": "",
+      "to_date": "",
+      "associated_with": "Aug 2024 - Sep 2024",
+      "url": null
+    },
+    {
+      "title": "Image Caption Generator",
+      "description": "This app allows users to upload an image, and it generates a descriptive caption for the image using deep learning techniques. The app leverages a pre-trained ResNet50 model for image feature extraction and a custom trained LSTM-based model for generating captions. Here’s how it works:\n\n • Image Upload: Users can upload an image in JPG format.\n • Image Preprocessing: The uploaded image is processed and resized to fit the model requirements.\n • Feature Extraction: ResNet50, pre-trained on the ImageNet dataset, is used to extract the feature vector from the image.\n • Caption Generation: The extracted features are passed into a trained sequence model, which predicts a caption word by word, using a vocabulary represented as word-to-index and index-to-word mappings.\n • Result: The generated caption is displayed on the app interface, offering an automatic description of the uploaded image.\nLive Demo:[https://imagecaptiongenerator-z5qyrcrynnjdrkeghzk6ms.streamlit.app]\nThis app allows users to upload an image, and it generates a descriptive caption for the image using deep learning techniques. The app leverages a pre-trained ResNet50 model for image feature extraction and a custom trained LSTM-based model for generating captions. Here’s how it works: • Image Upload: Users can upload an image in JPG format. • Image Preprocessing: The uploaded image is processed and resized to fit the model requirements. • Feature Extraction: ResNet50, pre-trained on the ImageNet dataset, is used to extract the feature vector from the image. • Caption Generation: The extracted features are passed into a trained sequence model, which predicts a caption word by word, using a vocabulary represented as word-to-index and index-to-word mappings. • Result: The generated caption is displayed on the app interface, offering an automatic description of the uploaded image. Live Demo:[https://imagecaptiongenerator-z5qyrcrynnjdrkeghzk6ms.streamlit.app]\nSkills: streamlit · Computer Vision · Transfer Learning · Deep Neural Networks (DNN) · Generative AI · Computer Science\nstreamlit · Computer Vision · Transfer Learning · Deep Neural Networks (DNN) · Generative AI · Computer Science\nScreenshot 2024-09-07 at 12.53.16 AM.png\nScreenshot 2024-09-07 at 12.53.16 AM.png\nan example and the model used\nan example and the model used",
+      "from_date": "",
+      "to_date": "",
+      "associated_with": "Aug 2024 - Aug 2024",
+      "url": null
+    },
+    {
+      "title": "Chat Analyser",
+      "description": "The WhatsApp Chat Analyzer is a Streamlit application designed to analyze WhatsApp chat data. It provides various insights into chat statistics, activity maps, word clouds, emoji usage, and more. This tool is useful for understanding chat patterns, user activity, and content in your WhatsApp conversations.\n\nFeatures\n\nTop Statistics: Displays total messages, words, media shared, and links shared.\nMonthly Timeline: Visualizes message count over each month.\nDaily Timeline: Visualizes message count for each day.\nActivity Map: Shows the most active days and months, and a weekly activity heatmap.\nMost Busy Users: Identifies the most active users in group chats.\nWordCloud: Generates a visual representation of the most frequently used words.\nMost Common Words: Lists and visualizes the most common words used in the chat.\nEmoji Analysis: Provides insights into the usage of emojis in the chat.\nUsage\n\nUpload a WhatsApp chat file: Use the sidebar to upload a .txt file exported from WhatsApp.\nSelect User: Choose a user or \"Overall\" to view analysis related to all users.\nClick \"Show Analysis\": The app will generate and display various analyses based on the selected user.\n\nLIve Demo: [https://whatsappchatanalysisproject-efwakkivfjqbj78pzhrpde.streamlit.app/]\nThe WhatsApp Chat Analyzer is a Streamlit application designed to analyze WhatsApp chat data. It provides various insights into chat statistics, activity maps, word clouds, emoji usage, and more. This tool is useful for understanding chat patterns, user activity, and content in your WhatsApp conversations. Features Top Statistics: Displays total messages, words, media shared, and links shared. Monthly Timeline: Visualizes message count over each month. Daily Timeline: Visualizes message count for each day. Activity Map: Shows the most active days and months, and a weekly activity heatmap. Most Busy Users: Identifies the most active users in group chats. WordCloud: Generates a visual representation of the most frequently used words. Most Common Words: Lists and visualizes the most common words used in the chat. Emoji Analysis: Provides insights into the usage of emojis in the chat. Usage Upload a WhatsApp chat file: Use the sidebar to upload a .txt file exported from WhatsApp. Select User: Choose a user or \"Overall\" to view analysis related to all users. Click \"Show Analysis\": The app will generate and display various analyses based on the selected user. LIve Demo: [https://whatsappchatanalysisproject-efwakkivfjqbj78pzhrpde.streamlit.app/]\nSkills: streamlit · Computer Science\nstreamlit · Computer Science\nchat.png\nchat.png",
+      "from_date": "",
+      "to_date": "",
+      "associated_with": "Jul 2024 - Jul 2024",
+      "url": null
+    },
+    {
+      "title": "Content Based Recommendation System",
+      "description": "The Content-Based Movie Recommender is an innovative web application that enhances your movie-watching experience. By leveraging content-based filtering techniques, this tool provides users personalized movie recommendations based on their input. Users can either manually enter a movie title or select one from a drop-down menu. The recommender engine then analyzes the chosen movie and generates a list of 5 movie recommendations that are similar in content, ensuring that users receive suggestions tailored to their tastes and preferences.\n\nKey features\n\nInteractive Interface: Users can easily search for movies by typing in a title or selecting one from a pre-defined list.\nPersonalized Recommendations: The recommender engine uses advanced algorithms to suggest movies with similar genres, themes, or attributes to the selected movie.\nInstant Results: Receive 5 movie recommendations almost instantly based on your input.\nSeamless Experience: The web application is designed to be user-friendly and intuitive, providing a smooth experience from movie selection to recommendation.\nUsage\n\nSelect or Enter a Movie: Use the drop-down menu or input field to specify your movie preference.\nGet Recommendations: Click the \"Recommend\" button to view 5 recommended movies based on your input.\n\nLive Demo: https://movierecommenderproject-4eg7nufupghirpvu4cmczy.streamlit.app/\nThe Content-Based Movie Recommender is an innovative web application that enhances your movie-watching experience. By leveraging content-based filtering techniques, this tool provides users personalized movie recommendations based on their input. Users can either manually enter a movie title or select one from a drop-down menu. The recommender engine then analyzes the chosen movie and generates a list of 5 movie recommendations that are similar in content, ensuring that users receive suggestions tailored to their tastes and preferences. Key features Interactive Interface: Users can easily search for movies by typing in a title or selecting one from a pre-defined list. Personalized Recommendations: The recommender engine uses advanced algorithms to suggest movies with similar genres, themes, or attributes to the selected movie. Instant Results: Receive 5 movie recommendations almost instantly based on your input. Seamless Experience: The web application is designed to be user-friendly and intuitive, providing a smooth experience from movie selection to recommendation. Usage Select or Enter a Movie: Use the drop-down menu or input field to specify your movie preference. Get Recommendations: Click the \"Recommend\" button to view 5 recommended movies based on your input. Live Demo: https://movierecommenderproject-4eg7nufupghirpvu4cmczy.streamlit.app/\nSkills: streamlit · Natural Language Processing (NLP) · Machine Learning · Computer Science\nstreamlit · Natural Language Processing (NLP) · Machine Learning · Computer Science\nScreenshot 2024-09-07 at 1.04.35 AM.png\nScreenshot 2024-09-07 at 1.04.35 AM.png",
+      "from_date": "",
+      "to_date": "",
+      "associated_with": "Jul 2024 - Jul 2024",
+      "url": null
+    }
+  ],
+  "skills": [
+    {
+      "name": "Business Research",
+      "endorsements": 0
+    },
+    {
+      "name": "Information Research",
+      "endorsements": 0
+    },
+    {
+      "name": "Program Trading",
+      "endorsements": 0
+    },
+    {
+      "name": "Automated Trading",
+      "endorsements": 0
+    },
+    {
+      "name": "Quantitative Research",
+      "endorsements": 0
+    },
+    {
+      "name": "Quantitative Finance",
+      "endorsements": 0
+    },
+    {
+      "name": "Market Making",
+      "endorsements": 0
+    },
+    {
+      "name": "Hedge Funds",
+      "endorsements": 0
+    },
+    {
+      "name": "Parseq",
+      "endorsements": 0
+    },
+    {
+      "name": "Object Detection",
+      "endorsements": 0
+    },
+    {
+      "name": "Text Recognition",
+      "endorsements": 0
+    },
+    {
+      "name": "Hi-SAM",
+      "endorsements": 0
+    },
+    {
+      "name": "Flask",
+      "endorsements": 0
+    },
+    {
+      "name": "Code Review",
+      "endorsements": 0
+    },
+    {
+      "name": "PyTorch",
+      "endorsements": 0
+    },
+    {
+      "name": "Transformers",
+      "endorsements": 0
+    },
+    {
+      "name": "Optimization Techniques",
+      "endorsements": 0
+    },
+    {
+      "name": "Analytical Skills",
+      "endorsements": 0
+    },
+    {
+      "name": "Communication",
+      "endorsements": 0
+    },
+    {
+      "name": "Computer Science",
+      "endorsements": 0
+    }
+  ],
+  "courses": [
+    {
+      "name": "Data Structures and Algorithms",
+      "institution": "COL106",
+      "completion_date": ""
+    },
+    {
+      "name": "Discrete Mathematical Structures",
+      "institution": "COL202",
+      "completion_date": ""
+    },
+    {
+      "name": "Introduction to Calculus",
+      "institution": "MTL100",
+      "completion_date": ""
+    },
+    {
+      "name": "Introduction to Computer Science",
+      "institution": "COL100",
+      "completion_date": ""
+    },
+    {
+      "name": "Introduction to Linear Algebra",
+      "institution": "MTL101",
+      "completion_date": ""
+    }
+  ],
+  "honors": [
+    {
+      "title": "KVPY Scholar",
+      "issuer": "Issued by Indian Institute of Science · Jun 2022",
+      "issue_date": "",
+      "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nSecured the All India Rank 317 in the SA stream and under General category for the year 2021-22.\nSecured the All India Rank 317 in the SA stream and under General category for the year 2021-22.\nkvpy.jpeg\nkvpy.jpeg\nCertificate\nCertificate"
+    },
+    {
+      "title": "NTSE Scholar",
+      "issuer": "Issued by Govt. of India · Jun 2021",
+      "issue_date": "",
+      "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi"
+    }
+  ],
+  "interests": [],
+  "accomplishments": [],
+  "contacts": [],
+  "scraped_at": "2025-09-25T02:58:08.719293"
+}

@@ -1,0 +1,64 @@
+{
+    "session_id": "S1549eba1",
+    "candidate": {
+        "name": "ansh",
+        "user_id": "Scffda03b"
+    },
+    "problem": {
+        "id": "2",
+        "title": "Three Sum",
+        "difficulty": "medium",
+        "language": "python"
+    },
+    "time": {
+        "start": "2025-09-27T17:07:18.674258",
+        "end": "2025-09-27T11:39:02.428082+00:00",
+        "time_allowed_min": 20,
+        "time_used_min": 0
+    },
+    "scores": {
+        "final": 35,
+        "components": {
+            "correctness": 0,
+            "optimality": 15,
+            "code_quality": 0,
+            "understanding": 10,
+            "communication": 10,
+            "penalties": 0
+        }
+    },
+    "tests": {
+        "public": [],
+        "hidden": {
+            "passed": 0,
+            "total": 0
+        }
+    },
+    "hints": [],
+    "timeline": [
+        {
+            "timestamp": "2025-09-27T17:08:12.272941",
+            "event": "clarification",
+            "text": "Find the sub set of length three and check if the sum matches the target.",
+            "level": null
+        }
+    ],
+    "artifacts": {
+        "final_code_path": "/files/S1549eba1/S1549eba1_final.py",
+        "transcript_path": "/files/S1549eba1/S1549eba1_transcript.txt"
+    },
+    "feedback": {
+        "strengths": [
+            "Good communication throughout",
+            "Demonstrated solid understanding"
+        ],
+        "weaknesses": [
+            "Accuracy in implementation needs improvement",
+            "Code organization and clarity could be enhanced"
+        ],
+        "recommendation": "Practice fundamental algorithms and improve problem-solving approach. Consider mock interviews."
+    },
+    "export_links": {
+        "pdf": "/export/S1549eba1/report.pdf"
+    }
+}

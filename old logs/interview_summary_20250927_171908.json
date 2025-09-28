@@ -1,0 +1,236 @@
+{
+    "summary": {
+        "overall_summary": "The candidate struggled to provide clear, concise answers about their recent role and the technical decisions they made, offering fragmented and vague descriptions of using Deepgram for speech-to-text and text-to-speech without detailing integration, performance, or rationale.",
+        "strengths": [
+            "Mentioned awareness of Deepgram and its closed\u2011source model.",
+            "Identified that the model had fast processing and built\u2011in voice activity detection."
+        ],
+        "areas_for_improvement": [
+            "Unable to articulate a coherent description of their recent role or responsibilities.",
+            "Failed to explain why Deepgram was chosen over alternatives such as Google Speech, Azure Speech, or Whisper.",
+            "Did not walk through integration details, latency considerations, or scalability strategies.",
+            "Communication was disorganized and lacked technical depth, making it difficult to assess competence."
+        ],
+        "hiring_recommendation": "No Hire \u2013 the candidate did not demonstrate sufficient technical knowledge or clear communication required for the role."
+    },
+    "conversation_history": [
+        {
+            "role": "interviewer",
+            "content": "Hello Vatsal, thank you for joining me today. Let's start by talking about your experience. Can you tell me about your role at your most recent position?"
+        },
+        {
+            "role": "candidate",
+            "content": "Uh, I just encountered that 84AI."
+        },
+        {
+            "role": "interviewer",
+            "content": "You mentioned encountering 84AI. Can you explain what 84AI is, how you came across it, and how it relates to the work you were doing in your most recent position?"
+        },
+        {
+            "role": "candidate",
+            "content": "Got it. Got it. So, uh, what models are you using? Uh, basically for text to speech. Speech to text, we are we found this model Deepgram. Mhmm. And it also has built in support for voice accurate detection. As you saw, it started speaking as soon as he stopped. Mhmm. Except the background noise. Uh, so it was a pretty good find. And also, it is pretty fast forwarded. And for What is this built on? Deepgram? Deepgram, basically, they have their own closed source model as far as Okay. I see. And for the and for the text to text"
+        },
+        {
+            "role": "interviewer",
+            "content": "You mentioned using Deepgram for speech\u2011to\u2011text and text\u2011to\u2011speech. Why did you choose Deepgram over other services (e.g., Google Speech, Azure Speech, Whisper), and can you walk me through how you integrated it into your backend and frontend to meet your latency, accuracy, and scalability requirements?"
+        }
+    ],
+    "knowledge_base": {
+        "entries": [
+            {
+                "claim": "Vatsal Jain",
+                "source": "linkedin",
+                "category": "personal",
+                "metadata": {
+                    "field": "name"
+                }
+            },
+            {
+                "claim": "Design, develop, and deploy scalable and robust web applications that leverage AI and machine learning capabilities.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Collaborate closely with AI/ML engineers, product managers, and UX/UI designers to translate complex AI functionalities into user-friendly features.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Contribute to all layers of the application stack, from database design and API development to responsive frontend interfaces.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Optimize web applications for performance, scalability, and security, ensuring a smooth experience for thousands of users.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Participate in code reviews, technical discussions, and architectural planning to uphold high standards of software quality and innovation.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Identify and resolve technical challenges, debug issues in cloud environments, and continuously improve our development processes.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Stay up-to-date with emerging technologies and industry best practices in AI, web development, and cloud computing.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field is preferred",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Minimum 3-5 years of hands-on experience in full-stack web development, with a strong understanding of both frontend and backend technologies.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Proficiency in at least one modern frontend framework (e.g., React, Vue.js) and experience with JavaScript/TypeScript.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Experience with backend development using languages such as Python (preferably Flask), Java, Node.js, or similar.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Familiarity with database technologies (SQL, NoSQL) and experience with designing and interacting with APIs (RESTful, GraphQL).",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Understanding of cloud platforms (e.g., AWS, GCP, Azure) and experience with deploying and managing applications in a cloud environment.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Demonstrated passion for artificial intelligence and machine learning, with an interest in building AI-driven products.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Familiarity and passion for AI tools like Cursor, Claud, Gemini, etc in software development skills.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Strong problem-solving skills, attention to detail, and a commitment to delivering high-quality software.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Excellent communication and collaboration skills, with the ability to work effectively in a fast-paced, agile environment.",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Zone A Base annual salary range: $135,570 to $181,000",
+                "source": "job_description",
+                "category": "stipend",
+                "metadata": {}
+            },
+            {
+                "claim": "discretionary annual bonus up to 15%",
+                "source": "job_description",
+                "category": "stipend",
+                "metadata": {}
+            },
+            {
+                "claim": "pre-IPO equity (stock options)",
+                "source": "job_description",
+                "category": "stipend",
+                "metadata": {}
+            },
+            {
+                "claim": "Santa Clara, CA",
+                "source": "job_description",
+                "category": "location",
+                "metadata": {}
+            },
+            {
+                "claim": "Hybrid",
+                "source": "job_description",
+                "category": "location",
+                "metadata": {}
+            },
+            {
+                "claim": "We are using this model Deepgram for text to speech.",
+                "source": "interview",
+                "category": "skills",
+                "metadata": {
+                    "lie": false,
+                    "confidence": 0.96
+                }
+            },
+            {
+                "claim": "Speech to text, we found this model Deepgram.",
+                "source": "interview",
+                "category": "skills",
+                "metadata": {
+                    "lie": false,
+                    "confidence": 0.96
+                }
+            },
+            {
+                "claim": "It also has built in support for voice accurate detection.",
+                "source": "interview",
+                "category": "skills",
+                "metadata": {
+                    "lie": false,
+                    "confidence": 0.95
+                }
+            },
+            {
+                "claim": "As you saw, it started speaking as soon as he stopped.",
+                "source": "interview",
+                "category": "experience",
+                "metadata": {
+                    "lie": false,
+                    "confidence": 0.95
+                }
+            },
+            {
+                "claim": "It is pretty fast forwarded.",
+                "source": "interview",
+                "category": "skills",
+                "metadata": {
+                    "lie": false,
+                    "confidence": 0.94
+                }
+            },
+            {
+                "claim": "Deepgram has their own closed source model.",
+                "source": "interview",
+                "category": "skills",
+                "metadata": {
+                    "lie": false,
+                    "confidence": 0.96
+                }
+            }
+        ]
+    }
+}

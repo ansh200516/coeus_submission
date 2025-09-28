@@ -1,0 +1,1361 @@
+{
+    "summary": {
+        "overall_summary": "The interview transcript contains only the interviewer's opening question and no candidate responses, making it impossible to evaluate the candidate's qualifications.",
+        "strengths": [],
+        "areas_for_improvement": [],
+        "hiring_recommendation": "No Hire - insufficient information to assess the candidate."
+    },
+    "conversation_history": [
+        {
+            "role": "interviewer",
+            "content": "Hello Vatsal, thank you for joining me today. Let's start by talking about your experience. Can you tell me about your role at your most recent position?"
+        }
+    ],
+    "knowledge_base": {
+        "entries": [
+            {
+                "claim": "Vatsal Jain",
+                "source": "linkedin",
+                "category": "personal",
+                "metadata": {
+                    "field": "name"
+                }
+            },
+            {
+                "claim": "IIT Delhi's Electrical and Electronics Engineering program has equipped me with a solid foundation in problem-solving, teamwork, and technical excellence. During my Software Engineer Internship at Atlassian, I contributed to enhancing their data orchestration platform by enabling critical features, improving agility, and ensuring data lineage preservation, leveraging tools like Python, Airflow, and DBT.\n\nAs Technical Secretary, I spearheaded the first-ever Tech General Championship, driving innovation and collaboration. I also developed and maintained the TRYST website using React.js and Django, ensuring real-time updates for IIT Delhi\u2019s annual tech fest. Focused on impactful projects, I aim to apply my technical expertise to solve complex challenges and foster growth in dynamic environments.",
+                "source": "linkedin",
+                "category": "personal",
+                "metadata": {
+                    "field": "about"
+                }
+            },
+            {
+                "claim": "Software Engineer Intern at Atlassian \u00b7 Internship (3 mos) - Bengaluru, Karnataka, India \u00b7 On-site",
+                "source": "linkedin",
+                "category": "experience",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern",
+                    "duration": "3 mos",
+                    "location": "Bengaluru, Karnataka, India \u00b7 On-site"
+                }
+            },
+            {
+                "claim": "Enhanced Atlassian's data orchestration platform by enabling flow descriptor renaming, improving agility and maintainability for 100+ teams",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern"
+                }
+            },
+            {
+                "claim": "I ensured seamless environment updates and developed validation logic to preserve data lineage, saving hours of manual work",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern"
+                }
+            },
+            {
+                "claim": "Additionally, built a solution for sending custom metrics from Python DBT jobs to SignalFX, enhancing real-time observability",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern"
+                }
+            },
+            {
+                "claim": "My expertise spans Python, Airflow, DBT, Databricks, and more, backed by comprehensive documentation efforts for user adoption and operational excellence.\nEnhanced Atlassian's data orchestration platform by enabling flow descriptor renaming, improving agility and maintainability for 100+ teams",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern"
+                }
+            },
+            {
+                "claim": "I ensured seamless environment updates and developed validation logic to preserve data lineage, saving hours of manual work",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern"
+                }
+            },
+            {
+                "claim": "Additionally, built a solution for sending custom metrics from Python DBT jobs to SignalFX, enhancing real-time observability",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "Atlassian \u00b7 Internship",
+                    "position": "Software Engineer Intern"
+                }
+            },
+            {
+                "claim": "Technical Secretary at Indian Institute of Technology, Delhi \u00b7 Full-time (1 yr 1 mo) - Delhi, India",
+                "source": "linkedin",
+                "category": "experience",
+                "metadata": {
+                    "company": "Indian Institute of Technology, Delhi \u00b7 Full-time",
+                    "position": "Technical Secretary",
+                    "duration": "1 yr 1 mo",
+                    "location": "Delhi, India"
+                }
+            },
+            {
+                "claim": "Technical Coordinator at TRYST, IIT Delhi \u00b7 Full-time (3 mos)",
+                "source": "linkedin",
+                "category": "experience",
+                "metadata": {
+                    "company": "TRYST, IIT Delhi \u00b7 Full-time",
+                    "position": "Technical Coordinator",
+                    "duration": "3 mos",
+                    "location": ""
+                }
+            },
+            {
+                "claim": "Developed and maintained the TRYST, IIT Delhi website using React.js and Django",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "TRYST, IIT Delhi \u00b7 Full-time",
+                    "position": "Technical Coordinator"
+                }
+            },
+            {
+                "claim": "Handled front-end design, back-end integration, and real-time event updates for the fest.\nDeveloped and maintained the TRYST, IIT Delhi website using React.js and Django",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "company": "TRYST, IIT Delhi \u00b7 Full-time",
+                    "position": "Technical Coordinator"
+                }
+            },
+            {
+                "claim": "Summer Research Intern at UNSW \u00b7 Internship (3 mos) - Sydney, New South Wales, Australia \u00b7 Remote",
+                "source": "linkedin",
+                "category": "experience",
+                "metadata": {
+                    "company": "UNSW \u00b7 Internship",
+                    "position": "Summer Research Intern",
+                    "duration": "3 mos",
+                    "location": "Sydney, New South Wales, Australia \u00b7 Remote"
+                }
+            },
+            {
+                "claim": "Events Ac Head at Rendezvous IITD \u00b7 Full-time (4 mos)",
+                "source": "linkedin",
+                "category": "experience",
+                "metadata": {
+                    "company": "Rendezvous IITD \u00b7 Full-time",
+                    "position": "Events Ac Head",
+                    "duration": "4 mos",
+                    "location": ""
+                }
+            },
+            {
+                "claim": "Bachelor of Technology - BTech, Electrical and Electronics Engineering from Indian Institute of Technology, Delhi (2022 - 2026)",
+                "source": "linkedin",
+                "category": "education",
+                "metadata": {
+                    "degree": "Bachelor of Technology - BTech, Electrical and Electronics Engineering",
+                    "institution": "Indian Institute of Technology, Delhi",
+                    "from_date": "2022",
+                    "to_date": "2026"
+                }
+            },
+            {
+                "claim": "GPA: 8.81 at Indian Institute of Technology, Delhi",
+                "source": "linkedin",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "Senior secondary school  from Blue Heaven Vidyalaya",
+                "source": "linkedin",
+                "category": "education",
+                "metadata": {
+                    "degree": "Senior secondary school ",
+                    "institution": "Blue Heaven Vidyalaya",
+                    "from_date": null,
+                    "to_date": null
+                }
+            },
+            {
+                "claim": "GPA: 96.4 at Blue Heaven Vidyalaya",
+                "source": "linkedin",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "Secondary school  from St. Anselm Sr. Sec School, Jaipur, Rajasthan ",
+                "source": "linkedin",
+                "category": "education",
+                "metadata": {
+                    "degree": "Secondary school ",
+                    "institution": "St. Anselm Sr. Sec School, Jaipur, Rajasthan ",
+                    "from_date": null,
+                    "to_date": null
+                }
+            },
+            {
+                "claim": "GPA: 96.4% at St. Anselm Sr. Sec School, Jaipur, Rajasthan ",
+                "source": "linkedin",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "Databricks Products",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "SignalFX",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Vaporeon ",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Debugging",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Apache Airflow",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Minikube",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Docker Products",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Documentation",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Team Collaboration",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Collaborative Problem Solving",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Software Industry",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Bitbucket",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Confluence",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Kotlin",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Kubernetes",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Data Analytics",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Data Platform Engineering ",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Web Development",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Communication",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "React.js",
+                "source": "linkedin",
+                "category": "skill",
+                "metadata": {
+                    "endorsements": 0
+                }
+            },
+            {
+                "claim": "Tetris_Game_CV_Python (Jan 2025 - Jan 2025)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Tetris_Game_CV_Python",
+                    "timeframe": "Jan 2025 - Jan 2025",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Stock Market Simulation and Tracking Application (Nov 2024 - Dec 2024)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Stock Market Simulation and Tracking Application",
+                    "timeframe": "Nov 2024 - Dec 2024",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Used Car Prediction Model (Aug 2024 - Nov 2024)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Used Car Prediction Model",
+                    "timeframe": "Aug 2024 - Nov 2024",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Havannah Game Playing AI (Sep 2024 - Oct 2024)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Havannah Game Playing AI",
+                    "timeframe": "Sep 2024 - Oct 2024",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Document Processing Tool and Search Engine (Nov 2023 - Nov 2023)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Document Processing Tool and Search Engine",
+                    "timeframe": "Nov 2023 - Nov 2023",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Unlimited Int and Rationals + Expression Evaluator using Trees (Oct 2023 - Oct 2023)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Unlimited Int and Rationals + Expression Evaluator using Trees",
+                    "timeframe": "Oct 2023 - Oct 2023",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Bank data class and the concept of Hashing (Sep 2023 - Sep 2023)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Bank data class and the concept of Hashing",
+                    "timeframe": "Sep 2023 - Sep 2023",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Clash Invaders (Jun 2023 - Aug 2023)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Clash Invaders",
+                    "timeframe": "Jun 2023 - Aug 2023",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Monopoly Game (Jun 2023 - Aug 2023)",
+                "source": "linkedin",
+                "category": "project",
+                "metadata": {
+                    "title": "Monopoly Game",
+                    "timeframe": "Jun 2023 - Aug 2023",
+                    "url": null
+                }
+            },
+            {
+                "claim": "Advanced Learning Algorithms from Coursera (Dec 2023)",
+                "source": "linkedin",
+                "category": "certification",
+                "metadata": {
+                    "name": "Advanced Learning Algorithms",
+                    "organization": "Coursera",
+                    "date": "Dec 2023",
+                    "credential_id": "EKTMGYT9Y823"
+                }
+            },
+            {
+                "claim": "Supervised Machine Learning: Regression and Classification from Coursera (Dec 2023)",
+                "source": "linkedin",
+                "category": "certification",
+                "metadata": {
+                    "name": "Supervised Machine Learning: Regression and Classification",
+                    "organization": "Coursera",
+                    "date": "Dec 2023",
+                    "credential_id": "EHYRV6AM6JA9"
+                }
+            },
+            {
+                "claim": "Unsupervised Learning, Recommenders, Reinforcement Learning from DeepLearning.AI, Stanford University (Dec 2023)",
+                "source": "linkedin",
+                "category": "certification",
+                "metadata": {
+                    "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+                    "organization": "DeepLearning.AI, Stanford University",
+                    "date": "Dec 2023",
+                    "credential_id": "CWH9AMB4CYCJ"
+                }
+            },
+            {
+                "claim": "International Quant Championship 2025 Stage 1 - Issued by WorldQuant Brain \u00b7 Apr 2025",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "International Quant Championship 2025 Stage 1",
+                    "issuer": "Issued by WorldQuant Brain \u00b7 Apr 2025",
+                    "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nReached Gold Level (10K+ points) in WorldQuant Challenge\nReached Gold Level (10K+ points) in WorldQuant Challenge\nCertificate.png\nCertificate.png\nReached Gold Level\nReached Gold Level"
+                }
+            },
+            {
+                "claim": "Mathemania - Issued by IIT Kanpur \u00b7 Dec 2023",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "Mathemania",
+                    "issuer": "Issued by IIT Kanpur \u00b7 Dec 2023",
+                    "description": "Associated with Indian Institute of Technology, Delhi\nAssociated with Indian Institute of Technology, Delhi\nRanked 8th among all teams participated and Reached till the last round of the competition.\nRanked 8th among all teams participated and Reached till the last round of the competition.\nMathemaina certificate.pdf\nMathemaina certificate.pdf"
+                }
+            },
+            {
+                "claim": "KVPY SX Scholar - Issued by Indian Institute of Science (IISC) \u00b7 Jun 2022",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "KVPY SX Scholar",
+                    "issuer": "Issued by Indian Institute of Science (IISC) \u00b7 Jun 2022",
+                    "description": "Kishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India.\nKishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India."
+                }
+            },
+            {
+                "claim": "IOQP(Indian Olympiad Qualifier in Physics) - Issued by Indian Association of Physics Teachers (IAPT)  \u00b7 Mar 2022",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "IOQP(Indian Olympiad Qualifier in Physics)",
+                    "issuer": "Issued by Indian Association of Physics Teachers (IAPT)  \u00b7 Mar 2022",
+                    "description": "Among the top 1% in entire Rajasthan\nAmong the top 1% in entire Rajasthan"
+                }
+            },
+            {
+                "claim": "IOQM(Indian Olympiad Qualifier in Mathematics) - Issued by Indian Association of Physics Teachers (IAPT) \u00b7 Feb 2021",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "IOQM(Indian Olympiad Qualifier in Mathematics)",
+                    "issuer": "Issued by Indian Association of Physics Teachers (IAPT) \u00b7 Feb 2021",
+                    "description": "Cleared Stage 1,2 in IOQM 2021\nQualified Regional Mathematics Olympiad & was amongst top 300 students in India selected for INMO.\nCleared Stage 1,2 in IOQM 2021 Qualified Regional Mathematics Olympiad & was amongst top 300 students in India selected for INMO."
+                }
+            },
+            {
+                "claim": "KVPY SA Scholar - Issued by Indian Institute of Science (IISC) \u00b7 Feb 2021",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "KVPY SA Scholar",
+                    "issuer": "Issued by Indian Institute of Science (IISC) \u00b7 Feb 2021",
+                    "description": "AIR 600\nKishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India.\nAIR 600 Kishore Vaigyanik Protsahan Yojna (KVPY) scholarship program is a national program by the Department of Science and Technology, Government of India."
+                }
+            },
+            {
+                "claim": "NTSE Scholar - Issued by NCERT \u00b7 Feb 2021",
+                "source": "linkedin",
+                "category": "achievement",
+                "metadata": {
+                    "title": "NTSE Scholar",
+                    "issuer": "Issued by NCERT \u00b7 Feb 2021",
+                    "description": "Associated with St. Anselm Sr. Sec School, Jaipur, Rajasthan \nAssociated with St. Anselm Sr. Sec School, Jaipur, Rajasthan\nNational Talent Search Examination (NTSE) is a national-level scholarship program in India to identify and recognize students with high intellect and academic talent. It is awarded to Top 2000 students out of 1 million candidates by the Government Of India.\nAlso State Rank - 20 in Stage 1 (190/200 score)\nNational Talent Search Examination (NTSE) is a national-level scholarship program in India to identify and recognize students with high intellect and academic talent. It is awarded to Top 2000 students out of 1 million candidates by the Government Of India. Also State Rank - 20 in Stage 1 (190/200 score)"
+                }
+            },
+            {
+                "claim": "VATSAL JAIN",
+                "source": "resume",
+                "category": "personal",
+                "metadata": {
+                    "field": "name"
+                }
+            },
+            {
+                "claim": "B.Tech in Electrical Engineering",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "degree"
+                }
+            },
+            {
+                "claim": "Indian Institute of Technology Delhi",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "institution"
+                }
+            },
+            {
+                "claim": "GPA: 8.81",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "B.Tech in Electrical Engineering",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "degree"
+                }
+            },
+            {
+                "claim": "Indian Institute of Technology Delhi",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "institution"
+                }
+            },
+            {
+                "claim": "GPA: 8.81",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "GPA: 21",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "GPA: 2022",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "GPA: 96.4",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "GPA: 2020",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "GPA: 96.4",
+                "source": "resume",
+                "category": "education",
+                "metadata": {
+                    "type": "gpa"
+                }
+            },
+            {
+                "claim": "Atlassian, Bangalore | Data Analytics and Platform Engineering Intern",
+                "source": "resume",
+                "category": "experience",
+                "metadata": {
+                    "source": "internships"
+                }
+            },
+            {
+                "claim": "renaming in Atlassian\u2019s internal data pipelines by modifying validation logic in the repository,",
+                "source": "resume",
+                "category": "experience",
+                "metadata": {
+                    "source": "internships"
+                }
+            },
+            {
+                "claim": "University of New South Wales (UNSW), Sydney | Research Intern",
+                "source": "resume",
+                "category": "experience",
+                "metadata": {
+                    "source": "internships"
+                }
+            },
+            {
+                "claim": "AI Agent for Strategic Gameplay in Havannah",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "- Designed an AI agent using",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "Monte Carlo Tree Search (MCTS)",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "Stock Market Simulation and Tracking Application",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "- Built a trading site using",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "Search Engine and QnA Tool Application",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "- Developed a search engine using the",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "Database Manager of Intricate Banking System in C++",
+                "source": "resume",
+                "category": "project",
+                "metadata": {
+                    "source": "projects"
+                }
+            },
+            {
+                "claim": "Python",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "C++",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Verilog",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Bash",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "MySQL",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "MATLAB",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "OCTAVE",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "LaTeX",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "HTML",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "CSS",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "JavaScript",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "PyTorch",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "TensorFlow",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Django",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "NumPy",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Pandas",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Matplotlib",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "OpenCV",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Git",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Autodesk",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Jupyter Notebook",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "EXTRA CURRICULAR ACTIVITIES",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Jane Street Mystery Planet",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "1st Prize",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "a 4-round event combining complex puzzles and a",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "trading strategy challenge",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "WorldQuant International Quant Championship 2024",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Gold Level",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "and ranked",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "1207th",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "out of",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "000+ teams",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Finalist",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Lockout",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "1v1 competitive coding tournament",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "with",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "250+ participants",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "held during Tryst",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "the",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Tech Fest",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "of IIT Delhi",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "\u2022 Secured",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "2nd Runner-Up",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "position in",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Quant-Decoded",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "a Coding + Quant competition with",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "150+ participants",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "at IIT Delhi",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Convenor",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Inter-Hostel Technical General Championship",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Technical Secretary",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "secured",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "2nd place",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "among all hostels",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Technical Coordinator for Tryst",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "IIT Delhi\u2019s Tech Fest",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "managing and scaling the festival website used by",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "1000+ participants",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Page 1",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Page 2",
+                "source": "resume",
+                "category": "skill",
+                "metadata": {
+                    "source": "technical_skills"
+                }
+            },
+            {
+                "claim": "Design, develop, and deploy scalable and robust web applications that leverage AI and machine learning capabilities.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Collaborate closely with AI/ML engineers, product managers, and UX/UI designers to translate complex AI functionalities into user-friendly features.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Contribute to all layers of the application stack, from database design and API development to responsive frontend interfaces.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Optimize web applications for performance, scalability, and security, ensuring a smooth experience for thousands of users.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Participate in code reviews, technical discussions, and architectural planning to uphold high standards of software quality and innovation.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Identify and resolve technical challenges, debug issues in cloud environments, and continuously improve our development processes.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Stay up-to-date with emerging technologies and industry best practices in AI, web development, and cloud computing.",
+                "source": "job_description",
+                "category": "responsibilitie",
+                "metadata": {}
+            },
+            {
+                "claim": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Minimum 3-5 years of hands-on experience in full-stack web development",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Proficiency in at least one modern frontend framework (e.g., React, Vue.js) and experience with JavaScript/TypeScript",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Experience with backend development using languages such as Python (preferably Flask), Java, Node.js, or similar",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Familiarity with database technologies (SQL, NoSQL) and experience with designing and interacting with APIs (RESTful, GraphQL)",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Understanding of cloud platforms (e.g., AWS, GCP, Azure) and experience with deploying and managing applications in a cloud environment",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Demonstrated passion for artificial intelligence and machine learning, with an interest in building AI-driven products",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Familiarity and passion for AI tools like Cursor, Claud, Gemini, etc in software development skills",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Strong problem-solving skills, attention to detail, and a commitment to delivering high-quality software",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Excellent communication and collaboration skills, with the ability to work effectively in a fast-paced, agile environment",
+                "source": "job_description",
+                "category": "requirement",
+                "metadata": {}
+            },
+            {
+                "claim": "Zone A Base annual salary range: $135,570 to $181,000",
+                "source": "job_description",
+                "category": "stipend",
+                "metadata": {}
+            },
+            {
+                "claim": "Discretionary annual bonus up to 15%",
+                "source": "job_description",
+                "category": "stipend",
+                "metadata": {}
+            },
+            {
+                "claim": "Pre-IPO equity (stock options)",
+                "source": "job_description",
+                "category": "stipend",
+                "metadata": {}
+            },
+            {
+                "claim": "Santa Clara, CA (Hybrid)",
+                "source": "job_description",
+                "category": "location",
+                "metadata": {}
+            }
+        ]
+    }
+}

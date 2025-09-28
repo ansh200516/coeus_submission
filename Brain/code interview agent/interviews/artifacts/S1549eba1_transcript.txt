@@ -1,0 +1,13 @@
+[2025-09-27T17:07:56.745721] INTERVIEWER: Hello ansh! I'm your AI interviewer for today's coding session. 
+        I've selected the Three Sum problem for you - it's a 
+        Medium-level question that should take about 
+        20 minutes. The boilerplate and driver code are already 
+        provided - you just need to implement the solution function. I'll be here to help guide you through it. 
+        Feel free to think out loud and ask questions. Let's get started!
+
+[2025-09-27T17:08:12.272941] CANDIDATE: Find the sub set of length three and check if the sum matches the target.
+
+[2025-09-27T17:08:22.279728] INTERVIEWER: Good thinking, what's your next step?
+
+[2025-09-27T17:09:02.408884] INTERVIEWER: Thank you for your time today, ansh. You showed good problem-solving skills and I appreciate your effort. Keep practicing and you'll continue to improve!
+

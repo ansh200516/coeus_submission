@@ -1,0 +1,163 @@
+{
+    "session_info": {
+        "session_id": "S713569fa",
+        "candidate_name": "harsh",
+        "candidate_id": "S4c158320",
+        "start_time": "2025-09-28T01:26:49.926242"
+    },
+    "progress": {
+        "current_question_id": 9,
+        "questions_completed": 0,
+        "hints_given": 3,
+        "code_changes_count": 1,
+        "test_runs_count": 0,
+        "successful_test_runs": 0,
+        "interaction_count": 5,
+        "last_activity_time": "2025-09-28T01:27:58.908898"
+    },
+    "current_state": {
+        "is_active": true,
+        "is_paused": false,
+        "interview_ended": false,
+        "current_code": "def solution(x):\n    \"\"\"\n    :type x: int or List[str] or str (depending on the problem)\n    :rtype: int or None or str (depending on the problem)\n    \"\"\"\n    # Write your solution here\n    pass",
+        "current_question_data": {
+            "id": 9,
+            "title": "Reverse Words in a String",
+            "difficulty": "Medium",
+            "problemType": "reverse",
+            "level": 3,
+            "description": "Given an input string s, reverse the order of the words.\n\nA word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.\n\nReturn a string of the words in reverse order concatenated by a single space.\n\nNote that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.",
+            "examples": [
+                {
+                    "input": "s = \"the sky is blue\"",
+                    "output": "\"blue is sky the\"",
+                    "explanation": ""
+                },
+                {
+                    "input": "s = \"  hello world  \"",
+                    "output": "\"world hello\"",
+                    "explanation": "Your reversed string should not contain leading or trailing spaces."
+                }
+            ],
+            "constraints": [
+                "1 <= s.length <= 10^4",
+                "s contains English letters (upper-case and lower-case), digits, and spaces ' '.",
+                "There is at least one word in s."
+            ],
+            "testCases": [
+                {
+                    "input": "\"the sky is blue\"",
+                    "expectedOutput": "\"blue is sky the\""
+                },
+                {
+                    "input": "\"  hello world  \"",
+                    "expectedOutput": "\"world hello\""
+                },
+                {
+                    "input": "\"a good   example\"",
+                    "expectedOutput": "\"example good a\""
+                }
+            ]
+        },
+        "waiting_for_response": false,
+        "nudge_in_progress": false
+    },
+    "conversation_history": [
+        {
+            "timestamp": "2025-09-28T01:27:58.890614",
+            "role": "interviewer",
+            "content": "Hello Harsh! I’m an AI interviewer here to walk you through today’s coding session.  \nWe’ll spend around 20 minutes on a **Medium** problem: **“Reverse Words in a String.”** I’ll read the prompt, you’ll think aloud, ask any clarification questions, and then write the core solution function – the surrounding driver/boiler‑plate code is already provided, so you only need to implement the algorithm itself.  \nFeel free to pause, ask for hints, or discuss trade‑offs at any point. Let’s keep this relaxed and collaborative – happy coding!",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-28T01:28:17.909155",
+            "role": "interviewer",
+            "content": "It looks like you’ve taken a moment to think things through—nice work taking the time to plan! Could you walk me through what you’re considering for reversing the words in the string? For example, are you thinking about splitting the string first, handling any extra spaces, or maybe processing it character‑by‑character? I’d love to hear your current idea and any edge cases you’re keeping in mind. Feel free to talk out loud; it’ll help us see your reasoning and guide any next steps.",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-28T01:28:38.373291",
+            "role": "interviewer",
+            "content": "Take your time—those moments of thinking are really valuable. Could you walk me through what you’re considering for reversing the words in the string? For example, how you’d identify the individual words, any edge cases you’re thinking about (like extra spaces), and what steps you might take to build the final result. I’m interested in hearing the thought process, even if it’s just a rough outline. Feel free to talk out loud; that’ll help us both see where you’re headed.",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-28T01:29:38.105937",
+            "role": "interviewer",
+            "content": "Hey, take your time – it’s good to think things through! Could you walk me through what you’re considering so far? For example, how you might identify each word in the string, how you’d handle extra spaces, and what steps you’d take to rebuild the reversed sentence. I’d love to hear your thought process out loud; that’ll help us see how you’re tackling the problem. Feel free to sketch any ideas or edge cases you’re thinking about.",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-28T01:30:31.140277",
+            "role": "interviewer",
+            "content": "Thank you, Harsh, for tackling the “Reverse Words in a String” problem today. I appreciated how you asked clarifying questions early on and stayed focused on understanding the requirements—those are strong habits that help keep the solution on track. While you didn’t finish a final implementation this time, you demonstrated good problem‑decomposition skills by thinking through edge cases and discussing possible approaches. For future interviews, try to allocate a few minutes to sketch a quick, high‑level outline or pseudo‑code before diving into the editor; that can give you a solid roadmap and help you translate ideas into working code more smoothly. Also, when you encounter a blocker, consider writing a minimal stub or a simple test case to verify each part incrementally—this often reveals bugs earlier and builds confidence. Keep leveraging your clear communication style and curiosity; with a bit more practice turning those thoughts into concrete code, you’ll be able to deliver complete solutions under time pressure. I’m confident you’ll continue to improve, and I look forward to seeing your progress in the next interview. Great effort today—keep it up!",
+            "metadata": {}
+        }
+    ],
+    "test_results_history": [],
+    "final_code": "",
+    "question_info": {
+        "id": 9,
+        "title": "Reverse Words in a String",
+        "difficulty": "Medium",
+        "problemType": "reverse",
+        "level": 3,
+        "description": "Given an input string s, reverse the order of the words.\n\nA word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.\n\nReturn a string of the words in reverse order concatenated by a single space.\n\nNote that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.",
+        "examples": [
+            {
+                "input": "s = \"the sky is blue\"",
+                "output": "\"blue is sky the\"",
+                "explanation": ""
+            },
+            {
+                "input": "s = \"  hello world  \"",
+                "output": "\"world hello\"",
+                "explanation": "Your reversed string should not contain leading or trailing spaces."
+            }
+        ],
+        "constraints": [
+            "1 <= s.length <= 10^4",
+            "s contains English letters (upper-case and lower-case), digits, and spaces ' '.",
+            "There is at least one word in s."
+        ],
+        "testCases": [
+            {
+                "input": "\"the sky is blue\"",
+                "expectedOutput": "\"blue is sky the\""
+            },
+            {
+                "input": "\"  hello world  \"",
+                "expectedOutput": "\"world hello\""
+            },
+            {
+                "input": "\"a good   example\"",
+                "expectedOutput": "\"example good a\""
+            }
+        ]
+    },
+    "system_config": {
+        "timing": {
+            "inactivity_threshold": 15,
+            "polling_interval": 5,
+            "max_duration": 1800
+        },
+        "browser": {
+            "headless": false,
+            "url": "http://localhost:3000/coding-engine",
+            "timeout": 10
+        },
+        "audio": {
+            "stt_model": "nova-3",
+            "tts_model": "aura-2-thalia-en",
+            "sample_rate": 24000
+        },
+        "ai": {
+            "model": "gpt-oss-120b",
+            "stream": true,
+            "max_completion_tokens": 8192,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "reasoning_effort": "medium"
+        }
+    }
+}

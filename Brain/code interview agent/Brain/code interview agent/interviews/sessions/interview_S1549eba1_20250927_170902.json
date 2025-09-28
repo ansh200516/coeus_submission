@@ -1,0 +1,152 @@
+{
+    "session_info": {
+        "session_id": "S1549eba1",
+        "candidate_name": "ansh",
+        "candidate_id": "Scffda03b",
+        "start_time": "2025-09-27T17:07:18.674258"
+    },
+    "progress": {
+        "current_question_id": 2,
+        "questions_completed": 0,
+        "hints_given": 0,
+        "code_changes_count": 1,
+        "test_runs_count": 0,
+        "successful_test_runs": 0,
+        "interaction_count": 4,
+        "last_activity_time": "2025-09-27T17:07:56.749963"
+    },
+    "current_state": {
+        "is_active": true,
+        "is_paused": false,
+        "interview_ended": false,
+        "current_code": "def solution(nums, target):\n    \"\"\"\n    :type nums: List[int]\n    :type target: int\n    :rtype: List[int]\n    \"\"\"\n    # Write your solution here\n    pass",
+        "current_question_data": {
+            "id": 2,
+            "title": "Three Sum",
+            "difficulty": "Medium",
+            "problemType": "sum",
+            "level": 2,
+            "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\n\nNotice that the solution set must not contain duplicate triplets.",
+            "examples": [
+                {
+                    "input": "nums = [-1,0,1,2,-1,-4]",
+                    "output": "[[-1,-1,2],[-1,0,1]]",
+                    "explanation": "nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0."
+                },
+                {
+                    "input": "nums = [0,1,1]",
+                    "output": "[]",
+                    "explanation": "The only possible triplet does not sum up to 0."
+                }
+            ],
+            "constraints": [
+                "3 <= nums.length <= 3000",
+                "-10^5 <= nums[i] <= 10^5"
+            ],
+            "testCases": [
+                {
+                    "input": "[-1,0,1,2,-1,-4]",
+                    "expectedOutput": "[[-1,-1,2],[-1,0,1]]"
+                },
+                {
+                    "input": "[0,1,1]",
+                    "expectedOutput": "[]"
+                },
+                {
+                    "input": "[0,0,0]",
+                    "expectedOutput": "[[0,0,0]]"
+                }
+            ]
+        },
+        "waiting_for_response": false,
+        "nudge_in_progress": false
+    },
+    "conversation_history": [
+        {
+            "timestamp": "2025-09-27T17:07:56.745721",
+            "role": "interviewer",
+            "content": "Hello ansh! I'm your AI interviewer for today's coding session. \n        I've selected the Three Sum problem for you - it's a \n        Medium-level question that should take about \n        20 minutes. The boilerplate and driver code are already \n        provided - you just need to implement the solution function. I'll be here to help guide you through it. \n        Feel free to think out loud and ask questions. Let's get started!",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-27T17:08:12.272941",
+            "role": "candidate",
+            "content": "Find the sub set of length three and check if the sum matches the target.",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-27T17:08:22.279728",
+            "role": "interviewer",
+            "content": "Good thinking, what's your next step?",
+            "metadata": {}
+        },
+        {
+            "timestamp": "2025-09-27T17:09:02.408884",
+            "role": "interviewer",
+            "content": "Thank you for your time today, ansh. You showed good problem-solving skills and I appreciate your effort. Keep practicing and you'll continue to improve!",
+            "metadata": {}
+        }
+    ],
+    "test_results_history": [],
+    "final_code": "",
+    "question_info": {
+        "id": 2,
+        "title": "Three Sum",
+        "difficulty": "Medium",
+        "problemType": "sum",
+        "level": 2,
+        "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\n\nNotice that the solution set must not contain duplicate triplets.",
+        "examples": [
+            {
+                "input": "nums = [-1,0,1,2,-1,-4]",
+                "output": "[[-1,-1,2],[-1,0,1]]",
+                "explanation": "nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0."
+            },
+            {
+                "input": "nums = [0,1,1]",
+                "output": "[]",
+                "explanation": "The only possible triplet does not sum up to 0."
+            }
+        ],
+        "constraints": [
+            "3 <= nums.length <= 3000",
+            "-10^5 <= nums[i] <= 10^5"
+        ],
+        "testCases": [
+            {
+                "input": "[-1,0,1,2,-1,-4]",
+                "expectedOutput": "[[-1,-1,2],[-1,0,1]]"
+            },
+            {
+                "input": "[0,1,1]",
+                "expectedOutput": "[]"
+            },
+            {
+                "input": "[0,0,0]",
+                "expectedOutput": "[[0,0,0]]"
+            }
+        ]
+    },
+    "system_config": {
+        "timing": {
+            "inactivity_threshold": 25,
+            "polling_interval": 5,
+            "max_duration": 1800
+        },
+        "browser": {
+            "headless": false,
+            "url": "http://localhost:3000/coding-engine",
+            "timeout": 10
+        },
+        "audio": {
+            "stt_model": "nova-3",
+            "tts_model": "aura-2-thalia-en",
+            "sample_rate": 24000
+        },
+        "ai": {
+            "model": "llama3.1-70b",
+            "temperature": 0.7,
+            "max_tokens": 1024
+        }
+    }
+}

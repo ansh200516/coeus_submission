@@ -1,0 +1,37 @@
+[project]
+name = "eightfold-finals"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio-mqtt>=0.16.2",
+    "audioop-lts>=0.2.2",
+    "azure-cognitiveservices-speech>=1.45.0",
+    "black>=25.9.0",
+    "cerebras-cloud-sdk>=1.50.1",
+    "deepgram-sdk>=4.8.1",
+    "fastapi>=0.117.1",
+    "flask>=3.1.2",
+    "flask-cors>=6.0.1",
+    "langchain>=0.3.27",
+    "langchain-cerebras>=0.5.0",
+    "langchain-core>=0.3.76",
+    "langchain-openai>=0.3.29",
+    "lxml>=6.0.2",
+    "nltk>=3.9.1",
+    "pyaudio>=0.2.14",
+    "pyautogui>=0.9.54",
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.0.0",
+    "pydub>=0.25.1",
+    "python-dotenv>=1.1.1",
+    "python-multipart>=0.0.20",
+    "realtimetts[azure,edge,elevenlabs,gtts,openai]>=0.5.7",
+    "rich>=14.1.0",
+    "selenium>=4.35.0",
+    "sounddevice>=0.5.2",
+    "uvicorn>=0.37.0",
+    "webdriver-manager>=4.0.2",
+    "websockets>=15.0.1",
+]

@@ -1,0 +1,82 @@
+{
+    "session_id": "Sae3d9913",
+    "candidate": {
+        "name": "ansh",
+        "user_id": "Sc1427d9b"
+    },
+    "problem": {
+        "id": "9",
+        "title": "Reverse Words in a String",
+        "difficulty": "medium",
+        "language": "python"
+    },
+    "time": {
+        "start": "2025-09-27T15:32:55.416590",
+        "end": "2025-09-27T10:04:18.284426+00:00",
+        "time_allowed_min": 20,
+        "time_used_min": 0
+    },
+    "scores": {
+        "final": 38,
+        "components": {
+            "correctness": 0,
+            "optimality": 15,
+            "code_quality": 0,
+            "understanding": 10,
+            "communication": 13,
+            "penalties": 0
+        }
+    },
+    "tests": {
+        "public": [],
+        "hidden": {
+            "passed": 0,
+            "total": 0
+        }
+    },
+    "hints": [],
+    "timeline": [
+        {
+            "timestamp": "2025-09-27T15:33:34.104135",
+            "event": "clarification",
+            "text": "So yeah. You interface it or you text box.",
+            "level": null
+        },
+        {
+            "timestamp": "2025-09-27T15:33:44.277223",
+            "event": "clarification",
+            "text": "I'll be really honest. Uh, most probably, uh, English language and",
+            "level": null
+        },
+        {
+            "timestamp": "2025-09-27T15:33:54.774124",
+            "event": "clarification",
+            "text": "So this is all your verbal, uh,",
+            "level": null
+        },
+        {
+            "timestamp": "2025-09-27T15:34:03.237263",
+            "event": "clarification",
+            "text": "interaction.",
+            "level": null
+        }
+    ],
+    "artifacts": {
+        "final_code_path": "/files/Sae3d9913/Sae3d9913_final.py",
+        "transcript_path": "/files/Sae3d9913/Sae3d9913_transcript.txt"
+    },
+    "feedback": {
+        "strengths": [
+            "Good communication throughout",
+            "Demonstrated solid understanding"
+        ],
+        "weaknesses": [
+            "Accuracy in implementation needs improvement",
+            "Code organization and clarity could be enhanced"
+        ],
+        "recommendation": "Practice fundamental algorithms and improve problem-solving approach. Consider mock interviews."
+    },
+    "export_links": {
+        "pdf": "/export/Sae3d9913/report.pdf"
+    }
+}

@@ -64,6 +64,15 @@ def save_person_to_log(person, filename=None):
 
 if __name__ == "__main__":
     # Main execution
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='LinkedIn Profile Scraper')
+    parser.add_argument('--url', type=str, default="https://www.linkedin.com/in/anshsingh200516/",
+                        help='LinkedIn profile URL to scrape')
+    args = parser.parse_args()
+    
+    linkedin_url = args.url
+    
     email = os.getenv("LINKEDIN_EMAIL")
     password = os.getenv("LINKEDIN_PASSW")
     if not email or not password:
@@ -76,16 +85,35 @@ if __name__ == "__main__":
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(options=chrome_options)
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    driver = None
+    try:
+        driver = webdriver.Chrome(options=chrome_options)
+        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        
+        print(f"🔐 Attempting to login to LinkedIn...")
+        actions.login(driver, email, password)
+        print(f"✅ LinkedIn login successful")
+        
+        person = Person(linkedin_url, driver=driver)
 
-    actions.login(driver, email, password)
-    person = Person("https://www.linkedin.com/in/anshsingh200516/", driver=driver)
+        # Print the person object (as before)
+        print(person)
 
-    # Print the person object (as before)
-    print(person)
+        # Save person data to JSON log file
+        log_filepath = save_person_to_log(person)
+        print(f"✅ LinkedIn scraping completed successfully")
 
-    # Save person data to JSON log file
-    log_filepath = save_person_to_log(person)
-
-    # Close the driver
-    driver.quit()
+    except Exception as e:
+        print(f"❌ LinkedIn scraping failed: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
+    finally:
+        # Close the driver
+        if driver:
+            driver.quit()

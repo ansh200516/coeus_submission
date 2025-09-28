@@ -1,0 +1,27 @@
+[2025-09-28T00:49:30.379366] INTERVIEWER: Hello Harsh! I’m your AI interview coach for today. In this short 20‑minute session we’ll work through a medium‑difficulty problem called **Three Sum**. The coding environment already includes all the boilerplate and driver code—you only need to implement the solution function itself. Feel free to ask any clarifying questions, think aloud, and let me know whenever you hit a snag. I’m here to help and keep the conversation collaborative. Let’s get started!
+
+[2025-09-28T00:49:50.595107] INTERVIEWER: It looks like you’ve been thinking it over for a moment—take your time! Could you walk me through what’s coming to mind for this problem? For example, how are you picturing the relationship between the numbers and the target, or what kind of strategy you might try (brute‑force, sorting, using a hash‑map, etc.)? I’m interested in hearing the steps you’d consider, even if you’re not sure about the exact code yet. Feel free to talk out loud about any obstacles you see or alternatives you’re weighing.
+
+[2025-09-28T00:50:04.974874] INTERVIEWER: It looks like you’ve taken a moment to gather your thoughts—nice move, that usually helps spot the right angle. Could you walk me through what you’re considering so far? For example, are you thinking about how to scan the list, any particular data structures, or maybe how you’d handle duplicates? I’d love to hear your current approach and any trade‑offs you’re weighing. Feel free to talk out loud; it often leads to the insight you need.
+
+[2025-09-28T00:50:20.373197] INTERVIEWER: Take your time—I know these problems can feel a bit dense at first. Could you walk me through what’s coming to mind for this “Three Sum” task? For example, how you’re picturing the input, any patterns you’ve spotted, or what kind of strategy you might start with (brute‑force, sorting, using a hash map, etc.). I’m interested in hearing your thought process, even if it’s still forming. Feel free to talk out loud; it often helps clarify the next steps.
+
+[2025-09-28T00:51:07.687921] INTERVIEWER: **Feedback for Harsh – Three‑Sum (Medium)**  
+
+Hi Harsh, thanks for tackling the Three‑Sum problem today. I appreciate the effort you put in, especially taking the time to think through the problem and asking clarifying questions.  
+
+**What went well:**  
+- You quickly identified the need for sorting and the two‑pointer technique, which is the optimal approach for this problem.  
+- Your communication was clear—you explained your thought process out loud, which is exactly what interviewers look for.  
+
+**Areas to improve:**  
+- When you hit a roadblock, try to write a small stub or a quick sketch of the core loop; even a partial implementation shows progress and can reveal bugs early.  
+- Make sure to run at least one simple test case before moving on; that helps catch off‑by‑one errors and confirms the logic works.  
+- Practice handling edge cases (e.g., empty input, duplicates) so you can discuss them confidently even if you run out of coding time.  
+
+**Next steps:**  
+- Keep practicing the classic “sort‑and‑two‑pointer” pattern on similar problems; it will become second nature.  
+- Work on writing a minimal, testable version of your code early on, then iterate.  
+
+Overall, you demonstrated solid problem‑solving instincts and clear communication. With a bit more focus on incremental coding and quick validation, you’ll be well positioned for future interviews. Keep up the good work, and best of luck with the next round!
+

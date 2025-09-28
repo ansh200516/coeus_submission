@@ -1,0 +1,92 @@
+{
+    "session_id": "S18dd5836",
+    "candidate": {
+        "name": "harsh",
+        "user_id": "S4bee62e3"
+    },
+    "problem": {
+        "id": "2",
+        "title": "Three Sum",
+        "difficulty": "medium",
+        "language": "python"
+    },
+    "time": {
+        "start": "2025-09-28T00:48:41.103646",
+        "end": "2025-09-27T19:22:12.749264+00:00",
+        "time_allowed_min": 20,
+        "time_used_min": 0
+    },
+    "scores": {
+        "final": 34,
+        "components": {
+            "correctness": 0,
+            "optimality": 15,
+            "code_quality": 0,
+            "understanding": 9,
+            "communication": 10,
+            "penalties": 0
+        }
+    },
+    "tests": {
+        "public": [],
+        "hidden": {
+            "passed": 0,
+            "total": 0
+        }
+    },
+    "hints": [
+        {
+            "level": 1,
+            "text": "Consider updating counts as you move left pointer",
+            "timestamp": "2025-09-28T00:52:12.749310"
+        },
+        {
+            "level": 1,
+            "text": "Consider updating counts as you move left pointer",
+            "timestamp": "2025-09-28T00:52:12.749310"
+        },
+        {
+            "level": 1,
+            "text": "Consider updating counts as you move left pointer",
+            "timestamp": "2025-09-28T00:52:12.749310"
+        }
+    ],
+    "timeline": [
+        {
+            "timestamp": "2025-09-28T00:52:12.747988",
+            "event": "hint",
+            "text": null,
+            "level": 1
+        },
+        {
+            "timestamp": "2025-09-28T00:52:12.748008",
+            "event": "hint",
+            "text": null,
+            "level": 1
+        },
+        {
+            "timestamp": "2025-09-28T00:52:12.748015",
+            "event": "hint",
+            "text": null,
+            "level": 1
+        }
+    ],
+    "artifacts": {
+        "final_code_path": "/files/S18dd5836/S18dd5836_final.py",
+        "transcript_path": "/files/S18dd5836/S18dd5836_transcript.txt"
+    },
+    "feedback": {
+        "strengths": [
+            "Good communication throughout",
+            "Demonstrated solid understanding"
+        ],
+        "weaknesses": [
+            "Accuracy in implementation needs improvement",
+            "Code organization and clarity could be enhanced"
+        ],
+        "recommendation": "Practice fundamental algorithms and improve problem-solving approach. Consider mock interviews."
+    },
+    "export_links": {
+        "pdf": "/export/S18dd5836/report.pdf"
+    }
+}

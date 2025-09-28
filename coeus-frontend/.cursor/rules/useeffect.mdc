@@ -1,0 +1,208 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+Effects are an escape hatch from React paradigm for synchronizing with external systems. If there's no external system involved, you probably don't need an Effect.
+
+## When NOT to use Effects
+
+### ❌ Don't use Effects for data transformation
+```javascript
+// BAD: Redundant state and unnecessary Effect
+const [fullName, setFullName] = useState('');
+useEffect(() => {
+  setFullName(firstName + ' ' + lastName);
+}, [firstName, lastName]);
+
+// GOOD: Calculate during rendering
+const fullName = firstName + ' ' + lastName;
+```
+
+### ❌ Don't use Effects for expensive calculations
+```javascript
+// BAD: Inefficient re-computation
+const [visibleTodos, setVisibleTodos] = useState([]);
+useEffect(() => {
+  setVisibleTodos(getFilteredTodos(todos, filter));
+}, [todos, filter]);
+
+// GOOD: Use useMemo for expensive operations
+const visibleTodos = useMemo(() => 
+  getFilteredTodos(todos, filter), 
+  [todos, filter]
+);
+```
+
+### ❌ Don't use Effects for user events
+```javascript
+// BAD: Event logic in Effect
+useEffect(() => {
+  if (product.isInCart) {
+    showNotification(`Added ${product.name} to cart!`);
+  }
+}, [product]);
+
+// GOOD: Put event logic in event handlers
+function handleBuyClick() {
+  addToCart(product);
+  showNotification(`Added ${product.name} to cart!`);
+}
+```
+
+### ❌ Don't use Effects for prop-based state changes
+```javascript
+// BAD: Resetting state in Effect
+useEffect(() => {
+  setComment('');
+}, [userId]);
+
+// GOOD: Use key prop for state reset
+<Profile userId={userId} key={userId} />
+
+// GOOD: Calculate during render for partial updates
+const [prevItems, setPrevItems] = useState(items);
+if (items !== prevItems) {
+  setPrevItems(items);
+  setSelection(null);
+}
+```
+
+### ❌ Don't chain Effects for state updates
+```javascript
+// BAD: Chain of Effects
+useEffect(() => {
+  if (card !== null && card.gold) {
+    setGoldCardCount(c => c + 1);
+  }
+}, [card]);
+
+useEffect(() => {
+  if (goldCardCount > 3) {
+    setRound(r => r + 1);
+    setGoldCardCount(0);
+  }
+}, [goldCardCount]);
+
+// GOOD: Calculate everything in event handler
+function handlePlaceCard(nextCard) {
+  setCard(nextCard);
+  if (nextCard.gold) {
+    if (goldCardCount <= 3) {
+      setGoldCardCount(goldCardCount + 1);
+    } else {
+      setGoldCardCount(0);
+      setRound(round + 1);
+    }
+  }
+}
+```
+
+### ❌ Don't use Effects to notify parent components
+```javascript
+// BAD: Effect for parent notification
+useEffect(() => {
+  onChange(isOn);
+}, [isOn, onChange]);
+
+// GOOD: Update parent in event handler
+function updateToggle(nextIsOn) {
+  setIsOn(nextIsOn);
+  onChange(nextIsOn);
+}
+
+// BETTER: Lift state up entirely
+function Toggle({ isOn, onChange }) {
+  function handleClick() {
+    onChange(!isOn);
+  }
+}
+```
+
+## When TO use Effects
+
+### ✅ Synchronizing with external systems
+- Network requests (with proper cleanup)
+- Browser APIs (timers, subscriptions)
+- Third-party libraries
+- DOM manipulation that React doesn't control
+
+### ✅ App initialization (once per app load)
+```javascript
+// GOOD: App-wide initialization
+let didInit = false;
+useEffect(() => {
+  if (!didInit) {
+    didInit = true;
+    loadDataFromLocalStorage();
+    checkAuthToken();
+  }
+}, []);
+
+// BETTER: Module-level initialization
+if (typeof window !== 'undefined') {
+  checkAuthToken();
+  loadDataFromLocalStorage();
+}
+```
+
+### ✅ External store subscriptions (prefer useSyncExternalStore)
+```javascript
+// GOOD: External store subscription
+function useOnlineStatus() {
+  return useSyncExternalStore(
+    subscribe,
+    () => navigator.onLine,
+    () => true
+  );
+}
+```
+
+### ✅ Data fetching (with cleanup for race conditions)
+```javascript
+// GOOD: Data fetching with cleanup
+useEffect(() => {
+  let ignore = false;
+  fetchResults(query, page).then(json => {
+    if (!ignore) {
+      setResults(json);
+    }
+  });
+  return () => {
+    ignore = true;
+  };
+}, [query, page]);
+```
+
+## Decision Framework
+
+Ask yourself these questions:
+1. **Is this caused by a specific user interaction?** → Use event handler
+2. **Can this be calculated from existing props/state?** → Calculate during render
+3. **Is this expensive and can be memoized?** → Use useMemo/useCallback
+4. **Does this involve an external system?** → Use Effect
+5. **Should this happen because the component was displayed?** → Use Effect
+
+## Performance Tips
+
+- **Avoid cascading updates**: Don't use Effects that trigger other state updates
+- **Prefer calculated values** over stored state when possible
+- **Use keys for component reset** instead of Effects
+- **Measure before optimizing**: Use console.time/timeEnd to identify actual bottlenecks
+- **Extract custom hooks** for reusable Effect logic
+
+## Common Patterns to Refactor
+
+1. **Derived state** → Calculate during render
+2. **State synchronization** → Lift state up
+3. **Event-driven updates** → Move to event handlers
+4. **Prop changes** → Use key prop or calculate during render
+5. **Expensive calculations** → Use useMemo
+6. **External data** → Use useSyncExternalStore or proper data fetching libraries
+
+## Red Flags
+- Effects that only update state based on other state
+- Effects that trigger on every render
+- Chained Effects that depend on each other
+- Effects for user interactions
+- Effects that could be replaced with simple calculations

@@ -1,0 +1,16 @@
+[2025-09-28T00:41:56.795303] INTERVIEWER: Hello Harsh! I’m an AI interviewer here to guide you through today’s coding session.  
+
+We’ll spend about 20 minutes on a medium‑difficulty problem: **“Reverse Words in a String.”** The problem description will be shown, but the surrounding boilerplate and driver code are already provided—your focus is just to implement the solution function.  
+
+Feel free to ask any clarifying questions at any time, and think out loud as you work—this is a collaborative conversation. Good luck, and let’s have some fun solving this together!
+
+[2025-09-28T00:42:15.398110] INTERVIEWER: I see you’ve been taking a moment to think—nice work giving yourself that space. Could you walk me through what’s coming to mind for tackling the “reverse words in a string” problem? Any ideas about how you might split the input or handle extra spaces would be great to hear. Feel free to talk out loud as you sketch your approach.
+
+[2025-09-28T00:42:44.773062] INTERVIEWER: Hey, no rush—take the time you need. I’m curious: what’s running through your mind right now? Have you thought about how you’d identify the individual words and then reorder them? Maybe you’ve considered edge cases like extra spaces or punctuation? I'd love to hear your current approach or any doubts you’re wrestling with. Feel free to talk aloud; it’ll help us both see the path forward.
+
+[2025-09-28T00:43:05.973307] INTERVIEWER: Hello Harsh—thank you for your time and effort on the “Reverse Words in a String” problem. I appreciate that you approached the question promptly, asked clarifying questions, and stayed engaged throughout the interview. Your willingness to think out loud and consider edge cases showed good analytical habits, and you demonstrated solid communication skills, which are valuable in any engineering role.
+
+Because a final implementation wasn’t submitted, we didn’t get to see how you’d translate that thought process into code. For future interviews, I recommend solidifying the habit of writing at least a minimal, working skeleton before the timer ends—this helps interviewers see your concrete solution and gives you a baseline to iterate on. Also, when you encounter a roadblock, try to quickly sketch a simple approach (even if it’s not optimal) and then refine it; that demonstrates problem‑solving resilience and keeps momentum.
+
+Overall, you displayed strong reasoning and a collaborative mindset. Keep practicing turning those insights into concise code under time pressure, and you’ll be well‑positioned for the next interview. I’m confident you’ll continue to grow, and I look forward to seeing your future successes. Good luck!
+

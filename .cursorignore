@@ -1,0 +1,6 @@
+.direnv
+.venv
+.env
+flake.nix
+flake.lock
+uv.lock

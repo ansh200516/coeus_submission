@@ -1,0 +1,81 @@
+{
+    "session_id": "S6f6101d6",
+    "candidate": {
+        "name": "harsh",
+        "user_id": "S2ed50e1f"
+    },
+    "problem": {
+        "id": "9",
+        "title": "Reverse Words in a String",
+        "difficulty": "medium",
+        "language": "python"
+    },
+    "time": {
+        "start": "2025-09-28T00:39:00.796720",
+        "end": "2025-09-27T19:13:06.014793+00:00",
+        "time_allowed_min": 20,
+        "time_used_min": 0
+    },
+    "scores": {
+        "final": 34,
+        "components": {
+            "correctness": 0,
+            "optimality": 15,
+            "code_quality": 0,
+            "understanding": 9,
+            "communication": 10,
+            "penalties": 0
+        }
+    },
+    "tests": {
+        "public": [],
+        "hidden": {
+            "passed": 0,
+            "total": 0
+        }
+    },
+    "hints": [
+        {
+            "level": 1,
+            "text": "Consider updating counts as you move left pointer",
+            "timestamp": "2025-09-28T00:43:06.014847"
+        },
+        {
+            "level": 1,
+            "text": "Consider updating counts as you move left pointer",
+            "timestamp": "2025-09-28T00:43:06.014847"
+        }
+    ],
+    "timeline": [
+        {
+            "timestamp": "2025-09-28T00:43:05.976209",
+            "event": "hint",
+            "text": null,
+            "level": 1
+        },
+        {
+            "timestamp": "2025-09-28T00:43:05.976225",
+            "event": "hint",
+            "text": null,
+            "level": 1
+        }
+    ],
+    "artifacts": {
+        "final_code_path": "/files/S6f6101d6/S6f6101d6_final.py",
+        "transcript_path": "/files/S6f6101d6/S6f6101d6_transcript.txt"
+    },
+    "feedback": {
+        "strengths": [
+            "Good communication throughout",
+            "Demonstrated solid understanding"
+        ],
+        "weaknesses": [
+            "Accuracy in implementation needs improvement",
+            "Code organization and clarity could be enhanced"
+        ],
+        "recommendation": "Practice fundamental algorithms and improve problem-solving approach. Consider mock interviews."
+    },
+    "export_links": {
+        "pdf": "/export/S6f6101d6/report.pdf"
+    }
+}

@@ -1,0 +1,51 @@
+68749674684
+Date posted
+07/11/2025
+Department
+Engineering
+﻿About the Job
+As part of the Talent Acquisition product dev team, you will build features for our AI-powered talent product. You will be responsible for medium to large projects, owning technical design and execution. You will collaborate closely product managers, designers, and your tech lead to deliver these features.
+Read this Blog about Eightfold's AI Agent Recruiter product.
+
+The Opportunity
+We are seeking a talented and passionate Software Engineer to join our team, focusing on building and enhancing AI-powered web applications. In this role, you will be instrumental in bringing our advanced AI models to life through intuitive and powerful user interfaces. You will work across the full stack, contributing to both the frontend and backend of our core products, ensuring a seamless and intelligent user experience for our enterprise customers.
+
+What You'll Do
+Design, develop, and deploy scalable and robust web applications that leverage our AI and machine learning capabilities.
+Collaborate closely with AI/ML engineers, product managers, and UX/UI designers to translate complex AI functionalities into user-friendly features.
+Contribute to all layers of the application stack, from database design and API development to responsive frontend interfaces.
+Optimize web applications for performance, scalability, and security, ensuring a smooth experience for thousands of users.
+Participate in code reviews, technical discussions, and architectural planning to uphold high standards of software quality and innovation.
+Identify and resolve technical challenges, debug issues in cloud environments, and continuously improve our development processes.
+Stay up-to-date with emerging technologies and industry best practices in AI, web development, and cloud computing.
+What You Bring
+Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field is preferred
+[Minimum 3-5 years] of hands-on experience in full-stack web development, with a strong understanding of both frontend and backend technologies.
+Proficiency in at least one modern frontend framework (e.g., React, Vue.js) and experience with JavaScript/TypeScript.
+Experience with backend development using languages such as Python (preferably Flask), Java, Node.js, or similar.
+Familiarity with database technologies (SQL, NoSQL) and experience with designing and interacting with APIs (RESTful, GraphQL).
+Understanding of cloud platforms (e.g., AWS, GCP, Azure) and experience with deploying and managing applications in a cloud environment.
+Demonstrated passion for artificial intelligence and machine learning, with an interest in building AI-driven products. 
+Familiarity and passion for AI tools like Cursor, Claud, Gemini, etc in software development skills.
+Strong problem-solving skills, attention to detail, and a commitment to delivering high-quality software.
+Excellent communication and collaboration skills, with the ability to work effectively in a fast-paced, agile environment.
+
+﻿Our Tech Stack
+Backend: Python, Flask, SQL, Bash
+Frontend: React, Redux, JavaScript, TypeScript, Webpack, NextJS, JSON
+Databases & Big Data: Apache Spark, Solr, MySQL
+Containerization: Docker
+Cloud: Major AWS services (Aurora, S3, Redshift, CloudFormation, SNS, SQS, etc.)
+AI/ML: Extensive use of AI and machine learning technologies throughout our platform.
+Pay Transparency
+Please note this role is categorized as onsite or hybrid in Santa Clara, CA The base salary ranges below are provided for pay transparency. Base pay is only one piece of our total compensation package as this role may be eligible for bonus and equity awards. Compensation varies depending on a number of factors including qualifications, skills, competencies, experience and zone. Zones are determined by location. Zone A is SF Bay Area, CA .
+
+Zone A Base annual salary range: $135,570 to $181,000 + discretionary annual bonus up to `15% + preIPO equity (stock options).
+
+﻿Hybrid Work @ Eightfold: We embrace a hybrid work model that aims to boost collaboration, enhance our culture, and drive innovation through a blend of remote and in-person work. We are committed to creating a dynamic and flexible work environment that nurtures the collaborative spirit of our team. Starting February 1, 2024, employees residing near Santa Clara, California, or our Bangalore and Noida offices in India will return to the office twice a week.
+ 
+Eightfold.ai provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, or disability. 
+
+﻿Experience our comprehensive benefits with family medical, vision and dental coverage, a competitive base salary, and eligibility for equity awards and discretionary bonuses or commissions.
+
+#LI-Hybrid

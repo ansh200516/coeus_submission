@@ -490,23 +490,6 @@ Response:
 **Task Management**
 
 ```http
-POST /tasks/start
-
-Request Body:
-{
-  "name": "John Doe",
-  "duration": 1800
-}
-
-Response:
-{
-  "task_id": "task_20250928_120000_xyz789",
-  "message": "Interview task started successfully",
-  "status": "started"
-}
-```
-
-```http
 GET /tasks/health
 Response:
 {
@@ -531,7 +514,7 @@ Request Body:
 Response:
 {
   "question_id": "two_sum",
-  "title": "Two Sum",
+  "title": "Two Sum", 
   "difficulty": "Medium",
   "description": "Given an array of integers...",
   "examples": [
@@ -544,7 +527,7 @@ Response:
   "test_cases": [
     {
       "input": "[2,7,11,15], 9",
-      "expected_output": "[0,1]",
+      "expected_output": "[0,1]", 
       "is_hidden": false
     }
   ],
@@ -565,6 +548,33 @@ Response:
 }
 ```
 
+**Task Management**
+
+```http
+GET /tasks/health
+
+Response:
+{
+  "status": "healthy",
+  "timestamp": "2025-09-29T12:00:00Z",
+  "active_tasks": 0
+}
+```
+
+**Interview Service Health**
+
+```http
+GET /interview/health
+
+Response:
+{
+  "status": "healthy",
+  "lda_available": true,
+  "scraper_available": true,
+  "active_tasks": 0
+}
+```
+
 ### Frontend Routes
 
 **Main Application Routes**
@@ -572,22 +582,27 @@ Response:
 ```http
 GET /
 Description: Landing page with system overview and navigation
+Features: Interactive galaxy background, system introduction
 
-GET /login
-Description: User authentication page (credentials: admin@coeus.ai / admin123)
+GET /login  
+Description: User authentication page
+Features: Login form with credential validation
 
 GET /dashboard
 Description: Main dashboard with system overview and navigation
+Features: System status, navigation to different modules
 
 GET /form
 Description: Interview registration form for candidate data input
+Features: File upload, form validation, candidate information collection
 
 GET /interview
 Description: Interview setup and initialization page
+Features: Interview preparation and status monitoring
 
-GET /akira
+GET /sesame
 Description: Live voice interview interface with AI interaction
-Features:
+Features: 
 - Real-time voice state indicator and amplitude visualization
 - Microphone controls and audio management
 - Voice activity detection and processing states
@@ -601,6 +616,7 @@ Features:
 
 GET /end-call
 Description: Interview completion page with navigation back to home
+Features: Interview completion confirmation and navigation
 ```
 
 **Administrative Routes**
@@ -609,10 +625,10 @@ Description: Interview completion page with navigation back to home
 GET /candidates
 Description: Candidate management and profile interface
 
-GET /interviews  
+GET /interviews
 Description: Interview history and management dashboard
 
-GET /reports
+GET /reports  
 Description: Interview reports and assessment summaries
 
 GET /analytics

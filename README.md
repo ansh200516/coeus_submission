@@ -490,6 +490,23 @@ Response:
 **Task Management**
 
 ```http
+POST /tasks/start
+
+Request Body:
+{
+  "name": "John Doe",
+  "duration": 1800
+}
+
+Response:
+{
+  "task_id": "task_20250928_120000_xyz789",
+  "message": "Interview task started successfully",
+  "status": "started"
+}
+```
+
+```http
 GET /tasks/health
 Response:
 {
@@ -502,19 +519,110 @@ Response:
 **Question Management**
 
 ```http
-GET /questions/available
+POST /questions/select_question
+
+Request Body:
+{
+  "difficulty": "Medium",
+  "tags": ["array", "hash-table"],
+  "candidate_level": "intermediate"
+}
+
 Response:
 {
-  "questions": [
+  "question_id": "two_sum",
+  "title": "Two Sum",
+  "difficulty": "Medium",
+  "description": "Given an array of integers...",
+  "examples": [
     {
-      "id": "two_sum",
-      "title": "Two Sum",
-      "difficulty": "Easy",
-      "tags": ["array", "hash-table"]
+      "input": "[2,7,11,15], target = 9",
+      "output": "[0,1]",
+      "explanation": "nums[0] + nums[1] = 2 + 7 = 9"
     }
   ],
-  "total_count": 150
+  "test_cases": [
+    {
+      "input": "[2,7,11,15], 9",
+      "expected_output": "[0,1]",
+      "is_hidden": false
+    }
+  ],
+  "constraints": ["2 <= nums.length <= 10^4"],
+  "tags": ["array", "hash-table"],
+  "boilerplate_code": "def twoSum(nums, target):\n    pass"
 }
+```
+
+```http
+GET /questions/health
+
+Response:
+{
+  "status": "healthy",
+  "service": "questions",
+  "total_questions": 150
+}
+```
+
+### Frontend Routes
+
+**Main Application Routes**
+
+```http
+GET /
+Description: Landing page with system overview and navigation
+
+GET /login
+Description: User authentication page (credentials: admin@coeus.ai / admin123)
+
+GET /dashboard
+Description: Main dashboard with system overview and navigation
+
+GET /form
+Description: Interview registration form for candidate data input
+
+GET /interview
+Description: Interview setup and initialization page
+
+GET /akira
+Description: Live voice interview interface with AI interaction
+Features:
+- Real-time voice state indicator and amplitude visualization
+- Microphone controls and audio management
+- Voice activity detection and processing states
+- Interview controls (mute/unmute, end call)
+
+GET /coding-engine
+Description: Code interview interface with integrated development environment
+Features:
+- Real-time code editor with syntax highlighting
+- Interactive coding environment for technical assessments
+
+GET /end-call
+Description: Interview completion page with navigation back to home
+```
+
+**Administrative Routes**
+
+```http
+GET /candidates
+Description: Candidate management and profile interface
+
+GET /interviews  
+Description: Interview history and management dashboard
+
+GET /reports
+Description: Interview reports and assessment summaries
+
+GET /analytics
+Description: System analytics and performance metrics dashboard
+
+GET /about
+Description: System information and documentation
+
+GET /contact
+Description: Contact information and support details
 ```
 
 ### WebSocket Endpoints

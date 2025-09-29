@@ -48,6 +48,28 @@ def strip_markdown(text: str) -> str:
     return text
 
 
+def remove_asterisks_from_response(text: str) -> str:
+    """
+    Remove asterisks from LLM responses.
+    
+    Args:
+        text: Raw text response from LLM
+        
+    Returns:
+        str: Text with asterisks removed
+    """
+    if not text:
+        return ""
+    
+    # Remove all asterisks from the text
+    text = text.replace('*', '')
+    
+    # Clean up any extra whitespace that might result from asterisk removal
+    text = re.sub(r'\s+', ' ', text).strip()
+    
+    return text
+
+
 def clean_text_for_speech(text: str) -> str:
     """
     Clean and prepare text for text-to-speech synthesis.
@@ -61,7 +83,10 @@ def clean_text_for_speech(text: str) -> str:
     if not text:
         return ""
     
-    # Remove markdown first
+    # Remove asterisks first
+    text = remove_asterisks_from_response(text)
+    
+    # Remove markdown
     text = strip_markdown(text)
     
     # Replace technical symbols with spoken equivalents

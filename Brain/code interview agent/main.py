@@ -5,7 +5,6 @@ This module provides the main entry point and coordinates all system components
 including audio management, code monitoring, AI agents, and interview flow.
 """
 
-import argparse
 import asyncio
 import datetime
 import json
@@ -20,7 +19,7 @@ from cerebras.cloud.sdk import Cerebras
 
 from agents import CodeInterviewerAgent, CodeAnalysisAgent
 from audio import AudioManager, InterviewSTT, InterviewTTS
-from code_monitor import QuestionManager
+from code_monitor import CodeEditorMonitor, QuestionManager
 from performance_logger import PerformanceLogger
 from config import (
     CEREBRAS_MODEL,
@@ -34,7 +33,7 @@ from config import (
     get_config_summary
 )
 from shared_state import AudioState, InterviewState
-from utils import find_project_root, safe_json_save, generate_timestamp_string
+from utils import find_project_root, safe_json_save, generate_timestamp_string, remove_asterisks_from_response
 
 load_dotenv()
 
@@ -44,85 +43,6 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-# Global variables for subprocess communication
-PIPE_PATH: Optional[str] = None
-SESSION_ID: Optional[str] = None
-
-
-def notify_completion(reason: str = "completed", data: Optional[Dict[str, Any]] = None) -> None:
-    """
-    Notify the parent process (WebSocket server) that the agent has completed its task.
-    
-    This function is called when:
-    - The interview is completed successfully
-    - An exception occurs
-    - The system is shutting down
-    - The agent finishes its task for any reason
-    
-    Args:
-        reason: Reason for completion ("completed", "error", "interrupted", "timeout")
-        data: Optional additional data to send
-    """
-    global PIPE_PATH, SESSION_ID
-    
-    try:
-        if not PIPE_PATH:
-            logger.info(f"Agent completed: {reason} (no pipe path configured)")
-            return
-        
-        completion_message = {
-            "event_type": "agent_completed",
-            "data": {
-                "reason": reason,
-                "session_id": SESSION_ID,
-                "timestamp": datetime.datetime.utcnow().isoformat(),
-                "message": f"Code interview agent finished: {reason}",
-                **(data or {})
-            }
-        }
-        
-        # Write to pipe file
-        with open(PIPE_PATH, 'a') as f:
-            f.write(json.dumps(completion_message) + '\n')
-        
-        logger.info(f"Notified completion via pipe: {reason}")
-        
-    except Exception as e:
-        logger.error(f"Failed to notify completion: {e}")
-
-
-def notify_event(event_type: str, data: Optional[Dict[str, Any]] = None) -> None:
-    """
-    Send an event notification to the parent process via pipe.
-    
-    Args:
-        event_type: Type of event
-        data: Optional event data
-    """
-    global PIPE_PATH, SESSION_ID
-    
-    try:
-        if not PIPE_PATH:
-            return
-        
-        event_message = {
-            "event_type": event_type,
-            "data": {
-                "session_id": SESSION_ID,
-                "timestamp": datetime.datetime.utcnow().isoformat(),
-                **(data or {})
-            }
-        }
-        
-        # Write to pipe file
-        with open(PIPE_PATH, 'a') as f:
-            f.write(json.dumps(event_message) + '\n')
-        
-        logger.debug(f"Sent event via pipe: {event_type}")
-        
-    except Exception as e:
-        logger.error(f"Failed to send event: {e}")
 
 
 # ========== MAIN INTERVIEW SYSTEM ==========
@@ -138,8 +58,7 @@ class CodeInterviewSystem:
         self,
         candidate_name: str = "Unknown Candidate",
         candidate_id: Optional[str] = None,
-        interview_mode: str = "challenging",
-        question_id: Optional[int] = None
+        interview_mode: str = "friendly"
     ) -> None:
         """
         Initialize the code interview system.
@@ -147,19 +66,18 @@ class CodeInterviewSystem:
         Args:
             candidate_name: Name of the candidate
             candidate_id: Optional candidate identifier
-            interview_mode: Interview mode (only "challenging" supported - friendly mode removed)
-            question_id: Optional specific question ID to use
+            interview_mode: Interview mode ("friendly" or "challenging")
         """
         self.candidate_name = candidate_name
         self.candidate_id = candidate_id
         self.interview_mode = interview_mode
-        self.question_id = question_id
         
         # Core components (initialized in setup)
         self.audio_state: Optional[AudioState] = None
         self.audio_manager: Optional[AudioManager] = None
         self.tts: Optional[InterviewTTS] = None
         self.stt: Optional[InterviewSTT] = None
+        self.code_monitor: Optional[CodeEditorMonitor] = None
         self.question_manager: Optional[QuestionManager] = None
         self.interview_state: Optional[InterviewState] = None
         self.interviewer_agent: Optional[CodeInterviewerAgent] = None
@@ -177,23 +95,11 @@ class CodeInterviewSystem:
         signal.signal(signal.SIGTERM, self._signal_handler)
         
         logger.info(f"CodeInterviewSystem initialized for {candidate_name} in {interview_mode} mode")
-        
-        # Notify initialization
-        notify_event("interview_initializing", {
-            "candidate_name": candidate_name,
-            "interview_mode": interview_mode
-        })
 
     def _signal_handler(self, signum: int, frame) -> None:
         """Handle shutdown signals gracefully."""
         logger.info(f"Received signal {signum}, initiating graceful shutdown...")
         self._shutdown_event.set()
-        
-        # Notify interruption
-        notify_completion("interrupted", {
-            "signal": signum,
-            "duration": (datetime.datetime.now() - self.start_time).total_seconds() if self.start_time else 0
-        })
 
     async def initialize(self) -> bool:
         """
@@ -225,8 +131,25 @@ class CodeInterviewSystem:
             # Audio system initialized - skipping test to avoid interference
             logger.info("Audio system initialized successfully")
             
-            # Code monitoring disabled - no browser interaction
-            logger.info("Code monitoring disabled - running without browser interaction")
+            # Initialize code monitoring
+            self.code_monitor = CodeEditorMonitor()
+            if not self.code_monitor.setup_browser():
+                logger.warning("Failed to setup browser for code monitoring")
+                logger.warning("Next.js app may not be running at http://localhost:3000")
+                logger.warning("Please start the Next.js app with: cd ../../coeus-frontend && npm run dev")
+                
+                # Ask user if they want to continue without browser monitoring
+                try:
+                    choice = input("\nContinue without browser monitoring? (y/N): ").strip().lower()
+                    if choice != 'y':
+                        logger.error("Browser setup required for interview system")
+                        return False
+                    else:
+                        logger.info("Continuing in demo mode without browser monitoring")
+                        self.code_monitor = None  # Disable code monitoring
+                except KeyboardInterrupt:
+                    logger.error("Setup interrupted by user")
+                    return False
             
             # Initialize question management
             self.question_manager = QuestionManager()
@@ -248,34 +171,6 @@ class CodeInterviewSystem:
             logger.error(f"System initialization failed: {e}", exc_info=True)
             return False
 
-    def _load_frontend_questions(self) -> List[Dict[str, Any]]:
-        """
-        Load questions from the frontend's questions.json file.
-        
-        Returns:
-            List[Dict[str, Any]]: List of questions from frontend
-        """
-        try:
-            import json
-            from pathlib import Path
-            
-            # Get path to frontend questions.json
-            current_dir = Path(__file__).parent
-            frontend_questions_path = current_dir.parent.parent / "coeus-frontend" / "src" / "data" / "questions.json"
-            
-            if frontend_questions_path.exists():
-                with open(frontend_questions_path, 'r', encoding='utf-8') as f:
-                    questions = json.load(f)
-                logger.info(f"Loaded {len(questions)} questions from frontend")
-                return questions
-            else:
-                logger.warning(f"Frontend questions.json not found at: {frontend_questions_path}")
-                return []
-                
-        except Exception as e:
-            logger.error(f"Error loading frontend questions: {e}")
-            return []
-
     async def select_and_set_question(self) -> bool:
         """
         Select an appropriate question and set it in the code editor.
@@ -284,45 +179,23 @@ class CodeInterviewSystem:
             bool: True if question selection successful
         """
         try:
-            selected_question = None
-            
-            # If specific question_id is provided, use it
-            if self.question_id is not None:
-                logger.info(f"Using specific question ID: {self.question_id}")
-                
-                # First try to get from QuestionManager
-                selected_question = self.question_manager.get_question_by_id(self.question_id)
-                
-                # If not found in QuestionManager, try frontend questions
-                if not selected_question:
-                    logger.info("Question not found in QuestionManager, trying frontend questions...")
-                    frontend_questions = self._load_frontend_questions()
-                    for q in frontend_questions:
-                        if q.get("id") == self.question_id:
-                            selected_question = q
-                            logger.info(f"Found question in frontend data: {q.get('title', 'Unknown')}")
-                            break
-                
-                if not selected_question:
-                    logger.warning(f"Question ID {self.question_id} not found, falling back to default selection")
-            
-            # If no specific question_id or question not found, use default selection
-            if not selected_question:
-                logger.info("Using default question selection (Easy difficulty)")
-                selected_question = self.question_manager.select_question_by_difficulty("easy")
+            # For now, select a medium difficulty question
+            # In a full implementation, this would be more sophisticated
+            selected_question = self.question_manager.select_question_by_difficulty("Medium")
             
             if not selected_question:
                 logger.error("Failed to select a question")
                 return False
             
-            # Question setting in editor disabled (no browser interaction)
-            logger.info("Question assignment handled without browser interaction")
+            # Set the question in the code editor (if available)
+            if self.code_monitor and not self.code_monitor.set_question(selected_question["id"]):
+                logger.warning("Failed to set question in editor, continuing with manual assignment")
             
             # Store question info in interview state
             await self.interview_state.set_current_question(selected_question)
             self.current_question = selected_question
             
-            logger.info(f"Selected question: {selected_question.get('title', 'Unknown')} (ID: {selected_question.get('id', 'Unknown')}, Difficulty: {selected_question.get('difficulty', 'Unknown')})")
+            logger.info(f"Selected question: {selected_question['title']} ({selected_question['difficulty']})")
             return True
             
         except Exception as e:
@@ -348,13 +221,6 @@ class CodeInterviewSystem:
         self.start_time = datetime.datetime.now()
         self.interview_state.is_active = True
         
-        # Notify interview started
-        notify_event("interview_started", {
-            "candidate_name": self.candidate_name,
-            "question_title": self.current_question.get("title", "Unknown"),
-            "difficulty": self.current_question.get("difficulty", "Unknown")
-        })
-        
         try:
             # Generate and deliver greeting
             greeting = await self.interviewer_agent.generate_greeting(self.current_question)
@@ -375,9 +241,25 @@ class CodeInterviewSystem:
                 not self._shutdown_event.is_set() and
                 (datetime.datetime.now() - self.start_time).total_seconds() < MAX_INTERVIEW_DURATION
             ):
-                # Code monitoring disabled - no browser interaction
+                # Monitor code changes (if browser monitoring is available)
                 current_code = ""
+                if self.code_monitor:
+                    current_code = self.code_monitor.get_current_code()
                 current_time = datetime.datetime.now()
+                
+                # Check for code changes
+                if current_code != last_code:
+                    await self.interview_state.update_code(current_code)
+                    last_activity_time = current_time
+                    last_code = current_code
+                    logger.debug("Code change detected")
+                
+                # Check for submit button clicks (every 3 seconds to avoid excessive checking)
+                if self.code_monitor and (current_time - last_submit_check).total_seconds() > 3:
+                    if self.code_monitor.detect_submit_click():
+                        await self._handle_submit_event(current_code)
+                        last_activity_time = current_time
+                    last_submit_check = current_time
                 
                 # Check for inactivity
                 inactivity_duration = (current_time - last_activity_time).total_seconds()
@@ -400,21 +282,8 @@ class CodeInterviewSystem:
             # Interview completion
             await self._complete_interview()
             
-            # Notify successful completion
-            notify_completion("completed", {
-                "duration": (datetime.datetime.now() - self.start_time).total_seconds(),
-                "question_title": self.current_question.get("title", "Unknown") if self.current_question else "Unknown"
-            })
-            
         except Exception as e:
             logger.error(f"Error during interview: {e}", exc_info=True)
-            
-            # Notify error completion
-            notify_completion("error", {
-                "error_message": str(e),
-                "duration": (datetime.datetime.now() - self.start_time).total_seconds() if self.start_time else 0
-            })
-            
         finally:
             await self._cleanup()
 
@@ -462,19 +331,8 @@ class CodeInterviewSystem:
         try:
             logger.info(f"Candidate response: {transcript[:50]}...")
             
-            # Analyze the response and generate appropriate follow-up
-            # This could involve code analysis, progress assessment, etc.
-            
-            # For now, provide a simple acknowledgment
-            responses = [
-                "I see, that's a good approach.",
-                "Interesting, tell me more about that.",
-                "That makes sense, keep going.",
-                "Good thinking, what's your next step?"
-            ]
-            
-            import random
-            response = random.choice(responses)
+            # Generate contextual response using the interviewer agent
+            response = await self._generate_contextual_response(transcript, current_code)
             
             await self.tts.speak(response, add_filler=True)
             await self.audio_manager.wait_for_playback_to_finish()
@@ -483,6 +341,74 @@ class CodeInterviewSystem:
             
         except Exception as e:
             logger.error(f"Error handling candidate response: {e}")
+            # Fallback to a generic but helpful response
+            fallback_response = "I understand. Can you tell me more about your approach?"
+            await self.tts.speak(fallback_response, add_filler=True)
+            await self.audio_manager.wait_for_playback_to_finish()
+
+    async def _generate_contextual_response(self, transcript: str, current_code: str) -> str:
+        """
+        Generate a contextual response based on the candidate's speech.
+        
+        Args:
+            transcript: What the candidate said
+            current_code: Current code content
+            
+        Returns:
+            str: Appropriate interviewer response
+        """
+        try:
+            # Build context for the response
+            context_prompt = f"""
+            You are conducting a coding interview. The candidate just said: "{transcript}"
+            
+            Current question: {self.current_question.get('title', 'Unknown')}
+            Difficulty: {self.current_question.get('difficulty', 'Unknown')}
+            
+            Current code:
+            ```python
+            {current_code if current_code.strip() else "# No code written yet"}
+            ```
+            
+            Generate an appropriate interviewer response that:
+            1. Directly addresses what the candidate said
+            2. Shows you're actively listening and engaged
+            3. Provides helpful guidance if they're asking questions
+            4. Encourages them to continue if they're explaining their approach
+            5. Answers any direct questions they asked
+            6. Keeps the conversation flowing naturally
+            7. Is encouraging and supportive
+            
+            Respond as if you're having a natural conversation. Keep it under 20 seconds of speech.
+            """
+            
+            response = self.interviewer_agent.llm.chat.completions.create(
+                model=CEREBRAS_MODEL,
+                messages=[
+                    {"role": "system", "content": self.interviewer_agent.system_prompt},
+                    {"role": "user", "content": context_prompt}
+                ],
+                temperature=CEREBRAS_TEMPERATURE,
+                max_tokens=CEREBRAS_MAX_TOKENS
+            )
+            
+            return remove_asterisks_from_response(response.choices[0].message.content.strip())
+            
+        except Exception as e:
+            logger.error(f"Error generating contextual response: {e}")
+            # Intelligent fallback based on keywords in transcript
+            transcript_lower = transcript.lower()
+            
+            if "submit" in transcript_lower:
+                return "Yes, feel free to submit when you're ready! The submit button should run your tests."
+            elif "question" in transcript_lower or "?" in transcript:
+                return "Great question! What specifically would you like to know more about?"
+            elif "think" in transcript_lower or "approach" in transcript_lower:
+                return "That sounds like a solid approach. Walk me through your thinking."
+            elif "reverse" in transcript_lower:
+                return "Reversing is an interesting approach. How are you planning to implement that?"
+            else:
+                return "I see what you mean. Can you elaborate on that a bit more?"
 
     async def _handle_submit_event(self, current_code: str) -> None:
         """
@@ -494,14 +420,37 @@ class CodeInterviewSystem:
         try:
             logger.info("Submit button clicked - processing test results...")
             
-            # Test execution monitoring disabled (no browser interaction)
-            # Provide general feedback without test results
-            fallback_feedback = "I see you've submitted your solution. Can you walk me through your approach and explain how you think it performs?"
-            await self.tts.speak(fallback_feedback, add_filler=True)
-            await self.audio_manager.wait_for_playback_to_finish()
-            await self.interview_state.add_interaction("interviewer", fallback_feedback)
-            
-            logger.info("Provided general submit feedback (browser interaction disabled)")
+            # Wait for test execution to complete
+            if self.code_monitor.wait_for_test_completion(timeout=30):
+                # Get test results
+                test_results = self.code_monitor.get_latest_test_results()
+                
+                if test_results:
+                    # Store test results in interview state
+                    await self.interview_state.add_test_results(test_results)
+                    
+                    # Generate interviewer feedback based on results
+                    feedback = await self._generate_submit_feedback(current_code, test_results)
+                    
+                    # Deliver feedback
+                    await self.tts.speak(feedback, add_filler=True)
+                    await self.audio_manager.wait_for_playback_to_finish()
+                    
+                    await self.interview_state.add_interaction("interviewer", feedback)
+                    
+                    logger.info(f"Provided submit feedback for {test_results['score']['passed']}/{test_results['score']['total']} passed tests")
+                else:
+                    # Fallback if we couldn't extract results
+                    fallback_feedback = "I see you've submitted your solution. Can you walk me through your approach and let me know how you think it performed?"
+                    await self.tts.speak(fallback_feedback, add_filler=True)
+                    await self.audio_manager.wait_for_playback_to_finish()
+                    await self.interview_state.add_interaction("interviewer", fallback_feedback)
+            else:
+                # Test execution timed out
+                timeout_feedback = "I notice the tests are taking some time to run. Can you explain your solution while we wait for the results?"
+                await self.tts.speak(timeout_feedback, add_filler=True)
+                await self.audio_manager.wait_for_playback_to_finish()
+                await self.interview_state.add_interaction("interviewer", timeout_feedback)
                 
         except Exception as e:
             logger.error(f"Error handling submit event: {e}")
@@ -565,7 +514,7 @@ class CodeInterviewSystem:
                 max_tokens=CEREBRAS_MAX_TOKENS
             )
             
-            return response.choices[0].message.content.strip()
+            return remove_asterisks_from_response(response.choices[0].message.content.strip())
             
         except Exception as e:
             logger.error(f"Error generating submit feedback: {e}")
@@ -582,8 +531,8 @@ class CodeInterviewSystem:
         try:
             logger.info("Completing interview...")
             
-            # Get final code (browser interaction disabled)
-            final_code = ""
+            # Get final code and generate feedback
+            final_code = self.code_monitor.get_current_code() if self.code_monitor else ""
             
             final_feedback = await self.interviewer_agent.generate_final_feedback(
                 self.interview_state.conversation_history,
@@ -610,7 +559,7 @@ class CodeInterviewSystem:
         try:
             # Generate session data
             session_data = await self.interview_state.to_dict()
-            session_data["final_code"] = ""  # Browser interaction disabled
+            session_data["final_code"] = self.code_monitor.get_current_code() if self.code_monitor else ""
             session_data["question_info"] = self.current_question
             session_data["system_config"] = get_config_summary()
             
@@ -632,7 +581,7 @@ class CodeInterviewSystem:
             
             # Save comprehensive performance log
             if self.performance_logger:
-                final_code = ""  # Browser interaction disabled
+                final_code = self.code_monitor.get_current_code() if self.code_monitor else ""
                 
                 # Get the latest test results if available
                 latest_test_results = None
@@ -673,7 +622,9 @@ class CodeInterviewSystem:
             if self.audio_manager:
                 await self.audio_manager.close()
             
-            # Code monitor cleanup skipped (browser interaction disabled)
+            # Close code monitor
+            if self.code_monitor:
+                self.code_monitor.close()
             
             # Update interview state
             if self.interview_state:
@@ -692,8 +643,7 @@ class CodeInterviewSystem:
 async def main(
     candidate_name: str = "Test Candidate",
     candidate_id: Optional[str] = None,
-    interview_mode: str = "challenging",
-    question_id: Optional[int] = None
+    interview_mode: str = "friendly"
 ) -> None:
     """
     Main entry point for the code interview system.
@@ -701,8 +651,7 @@ async def main(
     Args:
         candidate_name: Name of the candidate
         candidate_id: Optional candidate identifier
-        interview_mode: Interview mode (only "challenging" supported - friendly mode removed)
-        question_id: Optional specific question ID to use
+        interview_mode: Interview mode ("friendly" or "challenging")
     """
     print(f"""
     🎯 AI Code Interview System
@@ -718,49 +667,46 @@ async def main(
     Starting system initialization...
     """)
     
-    system = CodeInterviewSystem(candidate_name, candidate_id, interview_mode, question_id)
+    system = CodeInterviewSystem(candidate_name, candidate_id, interview_mode)
     await system.conduct_interview()
 
 
 if __name__ == "__main__":
-    # Set up argument parser
-    parser = argparse.ArgumentParser(description="Code Interview Agent")
-    parser.add_argument("candidate_name", nargs="?", default="Unknown Candidate", 
-                       help="Name of the candidate")
-    parser.add_argument("--pipe-path", type=str, help="Path to communication pipe for subprocess mode")
-    parser.add_argument("--session-id", type=str, help="Session ID for WebSocket communication")
-    parser.add_argument("--mode", type=str, default="challenging", 
-                       choices=["challenging", "friendly"], help="Interview mode")
-    parser.add_argument("--question-id", type=int, help="Specific question ID to use")
-    
-    args = parser.parse_args()
-    
-    # Set global variables for subprocess communication
-    PIPE_PATH = args.pipe_path
-    SESSION_ID = args.session_id
-    
     # Check for test mode or special commands
-    if args.candidate_name == "test":
-        print("🧪 Running system test...")
-        # Add test functionality later
-        sys.exit(0)
-    elif args.candidate_name == "recover" and args.session_id:
-        print(f"🔄 Recovering session: {args.session_id}")
-        # Add recovery functionality later
-        sys.exit(0)
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "test":
+            print("🧪 Running system test...")
+            # Add test functionality later
+            sys.exit(0)
+        elif sys.argv[1] == "recover" and len(sys.argv) > 2:
+            print(f"🔄 Recovering session: {sys.argv[2]}")
+            # Add recovery functionality later
+            sys.exit(0)
     
-    # Get candidate name
-    candidate_name = args.candidate_name
-    interview_mode = args.mode
+    # Get candidate name from command line or prompt (matching nudge.py)
+    candidate_name = "Unknown Candidate"
+    if len(sys.argv) > 1:
+        candidate_name = " ".join(sys.argv[1:])
+    else:
+        try:
+            candidate_name = input(
+                "Enter candidate name (or press Enter for 'Unknown Candidate'): "
+            ).strip()
+            if not candidate_name:
+                candidate_name = "Unknown Candidate"
+        except KeyboardInterrupt:
+            print("\nStarting with default candidate name...")
+            candidate_name = "Unknown Candidate"
+    
+    # Default to friendly mode
+    interview_mode = "friendly"
     
     try:
-        asyncio.run(main(candidate_name, args.session_id, interview_mode, args.question_id))
+        asyncio.run(main(candidate_name, None, interview_mode))
     except KeyboardInterrupt:
         print("\n\n👋 System stopped by user")
-        notify_completion("interrupted", {"reason": "KeyboardInterrupt"})
     except Exception as e:
         logger.error(f"Fatal error: {e}", exc_info=True)
         print(f"\n❌ System error: {e}")
-        notify_completion("error", {"error_message": str(e)})
     finally:
         print("\n✅ System shutdown complete")

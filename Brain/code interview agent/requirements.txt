@@ -1,0 +1,46 @@
+# Code Interview Agent Dependencies
+# Updated to match LDA system requirements and add code-specific dependencies
+
+# Core AI and API clients
+cerebras-cloud-sdk>=1.0.0
+python-dotenv>=1.0.0
+
+# LangChain for LLM integration (matching LDA)
+langchain-cerebras>=0.1.0
+langchain-core>=0.1.0
+pydantic>=2.0.0
+
+# Audio processing (matching LDA)
+pyaudio>=0.2.11
+websockets>=11.0.0
+
+# Deepgram SDK for STT/TTS (matching LDA)
+deepgram-sdk>=3.0.0
+
+# Web automation for code editor monitoring
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# Async support
+asyncio>=3.4.3
+
+# Utilities
+requests>=2.31.0
+
+# Data validation and serialization
+pydantic>=2.0.0
+
+# Optional: Better logging and debugging
+rich>=13.0.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.10.0
+
+# Code quality (matching workspace rules)
+ruff>=0.1.0
+
+# Type checking
+mypy>=1.0.0
+types-requests>=2.31.0

@@ -118,52 +118,6 @@ class CodeEditorMonitor:
             logger.error(f"Failed to setup browser: {e}")
             return False
 
-    def connect_to_existing_browser(self) -> bool:
-        """
-        Connect to an existing browser session (assumes browser is already running).
-        
-        This method sets up a minimal browser connection without launching a new browser,
-        assuming the React app is already loaded and running.
-        
-        Returns:
-            bool: True if connection successful, False otherwise
-        """
-        try:
-            # For now, we'll create a new driver instance but assume the app is already running
-            # In a more advanced implementation, this could connect to an existing session
-            chrome_options = Options()
-            
-            if BROWSER_HEADLESS:
-                chrome_options.add_argument("--headless")
-            
-            # Minimal Chrome options for connecting to existing session
-            chrome_options.add_argument("--no-sandbox")
-            chrome_options.add_argument("--disable-dev-shm-usage")
-            chrome_options.add_argument("--disable-gpu")
-            chrome_options.add_argument("--window-size=1920,1080")
-            
-            self.driver = webdriver.Chrome(options=chrome_options)
-            self.wait = WebDriverWait(self.driver, BROWSER_TIMEOUT)
-            
-            # Navigate to the React app (assuming it's already running)
-            logger.info(f"Connecting to existing React app at: {REACT_APP_URL}")
-            self.driver.get(REACT_APP_URL)
-            
-            # Wait for the page to load (should be quick since app is already running)
-            self.wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "body"))
-            )
-            
-            # Brief wait for React app to be ready
-            time.sleep(2)
-            
-            logger.info("Successfully connected to existing browser session")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Failed to connect to existing browser: {e}")
-            return False
-
     def get_current_code(self) -> str:
         """
         Get the current code from the Monaco editor.

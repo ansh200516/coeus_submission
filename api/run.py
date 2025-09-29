@@ -27,13 +27,13 @@ def main() -> None:
     logger.info("Starting FastAPI Interview Task API...")
     logger.info("Architecture: Model-Controller-Service")
     logger.info("Server: uvicorn")
-    logger.info("Host: 0.0.0.0:8000")
+    logger.info("Host: 0.0.0.0:8001")
     
     try:
         uvicorn.run(
             "api.main:app",
             host="0.0.0.0",
-            port=8000,
+            port=8001,
             reload=True,
             log_level="info",
             access_log=True

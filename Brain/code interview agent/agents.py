@@ -19,13 +19,14 @@ from code_monitor import CodeEditorMonitor, QuestionManager
 from config import CEREBRAS_MODEL, CEREBRAS_TEMPERATURE, CEREBRAS_MAX_TOKENS
 from prompts import (
     SYSTEM_PROMPT,
+    FRIENDLY_INTERVIEWER_PROMPT,
     CODE_ANALYSIS_SYSTEM_PROMPT,
     PROGRESS_ANALYSIS_PROMPT,
     get_nudge_prompt,
     get_transition_prompt
 )
 from shared_state import InterviewState
-from utils import sanitize_llm_json_output, strip_markdown, clean_text_for_speech
+from utils import sanitize_llm_json_output, strip_markdown, clean_text_for_speech, remove_asterisks_from_response
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -115,7 +116,7 @@ class CodeAnalysisAgent:
             )
             
             # Parse the response and create CodeAnalysis object
-            content = response.choices[0].message.content
+            content = remove_asterisks_from_response(response.choices[0].message.content)
             return self._parse_analysis_response(content)
             
         except Exception as e:
@@ -207,7 +208,7 @@ class CodeInterviewerAgent:
         self,
         llm_client: Cerebras,
         interview_state: InterviewState,
-        mode: str = "challenging"
+        mode: str = "friendly"
     ) -> None:
         """
         Initialize the code interviewer agent.
@@ -215,17 +216,20 @@ class CodeInterviewerAgent:
         Args:
             llm_client: Cerebras client for LLM operations
             interview_state: Shared interview state
-            mode: Interview mode (only "challenging" supported - no more friendly mode)
+            mode: Interview mode ("friendly" or "challenging")
         """
         self.llm = llm_client
         self.interview_state = interview_state
         self.mode = mode
         self.code_analysis_agent = CodeAnalysisAgent(llm_client)
         
-        # Always use challenging system prompt - no more friendly mode
-        self.system_prompt = SYSTEM_PROMPT
+        # Select system prompt based on mode
+        self.system_prompt = (
+            FRIENDLY_INTERVIEWER_PROMPT if mode == "friendly" 
+            else SYSTEM_PROMPT
+        )
         
-        logger.info(f"CodeInterviewerAgent initialized in {mode} mode (friendly mode removed)")
+        logger.info(f"CodeInterviewerAgent initialized in {mode} mode")
 
     async def generate_greeting(
         self,
@@ -270,7 +274,7 @@ class CodeInterviewerAgent:
                 max_tokens=CEREBRAS_MAX_TOKENS
             )
             
-            return response.choices[0].message.content.strip()
+            return remove_asterisks_from_response(response.choices[0].message.content.strip())
             
         except Exception as e:
             logger.error(f"Error generating greeting: {e}")
@@ -327,7 +331,7 @@ class CodeInterviewerAgent:
                 max_tokens=CEREBRAS_MAX_TOKENS
             )
             
-            return self._parse_progress_response(response.choices[0].message.content)
+            return self._parse_progress_response(remove_asterisks_from_response(response.choices[0].message.content))
             
         except Exception as e:
             logger.error(f"Error analyzing progress: {e}")
@@ -384,7 +388,7 @@ class CodeInterviewerAgent:
                 max_tokens=CEREBRAS_MAX_TOKENS
             )
             
-            nudge_text = response.choices[0].message.content.strip()
+            nudge_text = remove_asterisks_from_response(response.choices[0].message.content.strip())
             clean_text = clean_text_for_speech(nudge_text)
             
             # Record the interaction
@@ -430,7 +434,7 @@ class CodeInterviewerAgent:
                 max_tokens=CEREBRAS_MAX_TOKENS
             )
             
-            content = response.choices[0].message.content.strip()
+            content = remove_asterisks_from_response(response.choices[0].message.content.strip())
             
             return InterviewerResponse(
                 response_type=response_type,
@@ -521,7 +525,7 @@ class CodeInterviewerAgent:
                 max_tokens=CEREBRAS_MAX_TOKENS
             )
             
-            return response.choices[0].message.content.strip()
+            return remove_asterisks_from_response(response.choices[0].message.content.strip())
             
         except Exception as e:
             logger.error(f"Error generating final feedback: {e}")

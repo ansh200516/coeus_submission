@@ -13,7 +13,6 @@ from audio import InterviewTTS
 from knowledge_db import KnowledgeDatabase
 from prompts import (
     FINAL_REVIEW_PROMPT,
-    FRIENDLY_INTERVIEWER_PROMPT,
     GRILLING_INTERVIEWER_PROMPT,
     LIE_DETECTION_SYSTEM_PROMPT,
     NUDGE_GENERATION_SYSTEM_PROMPT,
@@ -145,13 +144,13 @@ class InterviewerAgent:
         follow_up_question: str
         severity: str
 
-    def __init__(self, knowledge_db: KnowledgeDatabase, llm_client: ChatCerebras, mode: str = "friendly"):
+    def __init__(self, knowledge_db: KnowledgeDatabase, llm_client: ChatCerebras, mode: str = "grilling"):
         self.knowledge_db = knowledge_db
         self.llm = llm_client
         self.active_nudges: Dict[str, Any] = {}
         self.escalation_levels = {
             1: "polite",
-            2: "firm",
+            2: "firm", 
             3: "aggressive",
             4: "final_warning",
         }
@@ -160,11 +159,8 @@ class InterviewerAgent:
         self.jd_requirements = self.knowledge_db.get_jd_requirements_as_string()
         self.jd_responsibilities = self.knowledge_db.get_jd_responsibilities_as_string()
 
-
-        if mode == "grilling":
-            system_prompt = GRILLING_INTERVIEWER_PROMPT
-        else:
-            system_prompt = FRIENDLY_INTERVIEWER_PROMPT
+        # Always use grilling mode - no more friendly interviews
+        system_prompt = GRILLING_INTERVIEWER_PROMPT
 
         # Chain for generating questions
         self.question_parser = PydanticOutputParser(

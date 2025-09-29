@@ -502,143 +502,19 @@ Response:
 **Question Management**
 
 ```http
-POST /questions/select_question
-
-Request Body:
-{
-  "difficulty": "Medium",
-  "tags": ["array", "hash-table"],
-  "candidate_level": "intermediate"
-}
-
+GET /questions/available
 Response:
 {
-  "question_id": "two_sum",
-  "title": "Two Sum", 
-  "difficulty": "Medium",
-  "description": "Given an array of integers...",
-  "examples": [
+  "questions": [
     {
-      "input": "[2,7,11,15], target = 9",
-      "output": "[0,1]",
-      "explanation": "nums[0] + nums[1] = 2 + 7 = 9"
+      "id": "two_sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "tags": ["array", "hash-table"]
     }
   ],
-  "test_cases": [
-    {
-      "input": "[2,7,11,15], 9",
-      "expected_output": "[0,1]", 
-      "is_hidden": false
-    }
-  ],
-  "constraints": ["2 <= nums.length <= 10^4"],
-  "tags": ["array", "hash-table"],
-  "boilerplate_code": "def twoSum(nums, target):\n    pass"
+  "total_count": 150
 }
-```
-
-```http
-GET /questions/health
-
-Response:
-{
-  "status": "healthy",
-  "service": "questions",
-  "total_questions": 150
-}
-```
-
-**Task Management**
-
-```http
-GET /tasks/health
-
-Response:
-{
-  "status": "healthy",
-  "timestamp": "2025-09-29T12:00:00Z",
-  "active_tasks": 0
-}
-```
-
-**Interview Service Health**
-
-```http
-GET /interview/health
-
-Response:
-{
-  "status": "healthy",
-  "lda_available": true,
-  "scraper_available": true,
-  "active_tasks": 0
-}
-```
-
-### Frontend Routes
-
-**Main Application Routes**
-
-```http
-GET /
-Description: Landing page with system overview and navigation
-Features: Interactive galaxy background, system introduction
-
-GET /login  
-Description: User authentication page
-Features: Login form with credential validation
-
-GET /dashboard
-Description: Main dashboard with system overview and navigation
-Features: System status, navigation to different modules
-
-GET /form
-Description: Interview registration form for candidate data input
-Features: File upload, form validation, candidate information collection
-
-GET /interview
-Description: Interview setup and initialization page
-Features: Interview preparation and status monitoring
-
-GET /sesame
-Description: Live voice interview interface with AI interaction
-Features: 
-- Real-time voice state indicator and amplitude visualization
-- Microphone controls and audio management
-- Voice activity detection and processing states
-- Interview controls (mute/unmute, end call)
-
-GET /coding-engine
-Description: Code interview interface with integrated development environment
-Features:
-- Real-time code editor with syntax highlighting
-- Interactive coding environment for technical assessments
-
-GET /end-call
-Description: Interview completion page with navigation back to home
-Features: Interview completion confirmation and navigation
-```
-
-**Administrative Routes**
-
-```http
-GET /candidates
-Description: Candidate management and profile interface
-
-GET /interviews
-Description: Interview history and management dashboard
-
-GET /reports  
-Description: Interview reports and assessment summaries
-
-GET /analytics
-Description: System analytics and performance metrics dashboard
-
-GET /about
-Description: System information and documentation
-
-GET /contact
-Description: Contact information and support details
 ```
 
 ### WebSocket Endpoints
@@ -707,6 +583,72 @@ Server → Client:
 - `404` - Resource not found
 - `422` - Unprocessable Entity (invalid data)
 - `500` - Internal server error
+
+### Frontend Routes
+
+**Main Application Routes**
+
+```http
+GET /
+Description: Landing page with system overview and navigation
+Features: Interactive galaxy background, system introduction
+
+GET /login
+Description: User authentication page
+Features: Login form with credential validation
+
+GET /dashboard
+Description: Main dashboard with system overview and navigation
+Features: System status, navigation to different modules
+
+GET /form
+Description: Interview registration form for candidate data input
+Features: File upload, form validation, candidate information collection
+
+GET /interview
+Description: Interview setup and initialization page
+Features: Interview preparation and status monitoring
+
+GET /sesame
+Description: Live voice interview interface with AI interaction
+Features:
+- Real-time voice state indicator and amplitude visualization
+- Microphone controls and audio management
+- Voice activity detection and processing states
+- Interview controls (mute/unmute, end call)
+
+GET /coding-engine
+Description: Code interview interface with integrated development environment
+Features:
+- Real-time code editor with syntax highlighting
+- Interactive coding environment for technical assessments
+
+GET /end-call
+Description: Interview completion page with navigation back to home
+Features: Interview completion confirmation and navigation
+```
+
+**Administrative Routes**
+
+```http
+GET /candidates
+Description: Candidate management and profile interface
+
+GET /interviews
+Description: Interview history and management dashboard
+
+GET /reports
+Description: Interview reports and assessment summaries
+
+GET /analytics
+Description: System analytics and performance metrics dashboard
+
+GET /about
+Description: System information and documentation
+
+GET /contact
+Description: Contact information and support details
+```
 
 ## Configuration
 

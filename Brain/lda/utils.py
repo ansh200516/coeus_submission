@@ -37,12 +37,15 @@ def sanitize_llm_json_output(text: str) -> str:
 
 def strip_markdown(text: str) -> str:
     """
-    Removes common markdown formatting (like **, *, _) from a string.
+    Removes common markdown formatting characters from a string.
+    Simply removes all asterisks, underscores, and backticks.
     """
-    # Remove bold and italics
-    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
-    text = re.sub(r"\*([^*]+)\*", r"\1", text)
-    text = re.sub(r"_([^_]+)_", r"\1", text)
-    # Remove inline code backticks
-    text = re.sub(r"`([^`]+)`", r"\1", text)
+    # Remove all asterisks
+    text = text.replace("*", "")
+    # Remove underscores (but keep spaces)
+    text = re.sub(r"_", "", text)
+    # Remove backticks
+    text = text.replace("`", "")
+    # Clean up any extra spaces that might be left
+    text = re.sub(r"\s+", " ", text).strip()
     return text
